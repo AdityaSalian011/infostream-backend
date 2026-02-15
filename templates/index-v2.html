@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News Feed</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f4f8;">
+  
+  <!-- Main Container -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f0f4f8;">
+    <tr>
+      <td align="center" style="padding: 20px 10px;">
+        
+        <!-- Content Wrapper -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 900px;">
+          
+          <!-- Stock Ticker Section -->
+          <tr>
+            <td style="padding-bottom: 15px;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  {% for info in stock_info %}
+                    {% set latest = info.info[0] %}
+                    {% set absolute = info.info[1] %}
+                    {% set percent = info.info[2] %}
+                    <td style="padding: 5px;">
+                      <table width="100%" cellpadding="15" cellspacing="0" border="0" style="background-color: #ffffff; border: 2px solid #e2e8f0; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <tr>
+                          <td>
+                            <div style="font-size: 16px; font-weight: 600; color: #1a202c; margin-bottom: 5px;">{{info.name}}</div>
+                            <div style="font-size: 15px; font-weight: 700; color: {% if absolute|float >= 0 %}#10b981{% else %}#ef4444{% endif %};">
+                              {% if absolute|float >= 0 %}▲{% else %}▼{% endif %} {{absolute}} ({{percent}}%)
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  {% endfor %}
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Weather Widget -->
+          <tr>
+            <td style="padding-bottom: 20px;">
+              <table width="100%" cellpadding="20" cellspacing="0" border="0" style="background-color: #3b82f6; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+                <tr>
+                  <td width="60" style="padding-right: 15px;">
+                    <img src="{{weather_icon_url}}" alt="Weather Icon" width="50" height="50" style="display: block;" />
+                  </td>
+                  <td>
+                    <div style="font-size: 20px; font-weight: 600; color: #ffffff; margin-bottom: 8px; text-transform: capitalize;">{{weather_info.status}}</div>
+                    <div style="font-size: 15px; color: #e0f2fe;">
+                      Temp: {{weather_info.temp}}°C • Feels like: {{weather_info.feels_like}}°C • Humidity: {{weather_info.humidity}}%
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- News Articles -->
+          {% for news_data in data %}
+          <tr>
+            <td style="padding-bottom: 25px;">
+              <table width="100%" cellpadding="30" cellspacing="0" border="0" style="background-color: #ffffff; border: 3px solid #e2e8f0; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <tr>
+                  <td>
+                    
+                    <!-- Article Title -->
+                    <h1 style="font-size: 28px; font-weight: 700; color: #1a202c; margin: 0 0 20px 0; padding-left: 15px; border-left: 6px solid #667eea; line-height: 1.3;">
+                      {{news_data.title}}
+                    </h1>
+
+                    <!-- Publish Date -->
+                    <div style="margin-bottom: 25px;">
+                      <div style="font-size: 14px; font-weight: 700; color: #667eea; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0;">
+                        PUBLISH DATE
+                      </div>
+                      {% if news_data.publish_date %}
+                        <div style="font-size: 16px; color: #2d3748; line-height: 1.7;">{{news_data.publish_date}}</div>
+                      {% else %}
+                        <div style="font-size: 16px; color: #9ca3af; font-style: italic; line-height: 1.7;">No information</div>
+                      {% endif %}
+                    </div>
+
+                    <!-- Authors -->
+                    <div style="margin-bottom: 25px;">
+                      <div style="font-size: 14px; font-weight: 700; color: #667eea; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0;">
+                        AUTHORS
+                      </div>
+                      {% if news_data.authors %}
+                        <div style="font-size: 16px; color: #2d3748; line-height: 1.7;">{{news_data.authors}}</div>
+                      {% else %}
+                        <div style="font-size: 16px; color: #9ca3af; font-style: italic; line-height: 1.7;">No information</div>
+                      {% endif %}
+                    </div>
+
+                    <!-- Summary -->
+                    <div style="margin-bottom: 25px;">
+                      <div style="font-size: 14px; font-weight: 700; color: #667eea; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0;">
+                        SUMMARY
+                      </div>
+                      <div style="font-size: 16px; color: #2d3748; line-height: 1.8;">{{news_data.summary}}</div>
+                    </div>
+
+                    <!-- Full Text -->
+                    <div>
+                      <div style="font-size: 14px; font-weight: 700; color: #667eea; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0;">
+                        FULL TEXT
+                      </div>
+                      <div style="font-size: 16px; color: #2d3748; line-height: 1.8; white-space: pre-line;">{{news_data.text}}</div>
+                    </div>
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          {% endfor %}
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
