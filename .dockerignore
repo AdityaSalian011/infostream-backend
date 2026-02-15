@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# API Keys (local files)
+key.py
+html_email/password.py
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+infostream.log
+
+# Directories
+dir/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Railway/Nixpacks config (not needed with Dockerfile)
+nixpacks.toml
+railway.json
+
+# Documentation
+README.md
+*.md
+
+# Test files
+test/
+tests/
+*.test.py
