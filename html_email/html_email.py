@@ -1,39 +1,37 @@
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 import os
+import logging
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 from dotenv import load_dotenv
 
-from config import (
-    SMTP_SERVER,
-    SMTP_PORT,
-    FROM_EMAIL
-)
-
 load_dotenv()
-SMTP_PASSWORD = os.getenv('SMTP_PASSWORD')
+logger = logging.getLogger(__name__)
+
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
+FROM_EMAIL = os.getenv('FROM_EMAIL', 'noreply@yourdomain.com')
 
 class HTMLEmail:
     def send_html_content(self, to_email, html_content, subject):
         """A method to send html email at the given address"""
         try:
-            from_email = FROM_EMAIL    ## my email address
-            app_password = SMTP_PASSWORD           ## my password
-
-            msg = MIMEMultipart()
-            msg['From'] = from_email
-            msg['To'] = to_email
-            msg['Subject'] = subject
-            msg.attach(MIMEText(html_content, 'html'))  ## attaches html content
-
-            with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
-                server.starttls()   
-                server.login(from_email, app_password)
-                server.send_message(msg)
+            if not SENDGRID_API_KEY:
+                return None, 'SENDGRID_API_KEY not configured'
             
+            message = Mail(
+                from_email=FROM_EMAIL,
+                to_email=to_email,
+                subject=subject,
+                html_content=html_content
+            )
+
+            sg = SendGridAPIClient(SENDGRID_API_KEY)
+            response = sg.send(message)
+
+            logger.info(f"✅ Email sent to {to_email} (Status: {response.status_code})")
             return 'Email sent successfully', None
         except Exception as exc:
             error = f'Failed to send email:\n{exc}'
+            logger.error(error)
             return None, error
         
 if __name__=='__main__':
