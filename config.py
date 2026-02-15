@@ -61,7 +61,7 @@ GUI_FONTS = {
 
 # Email Settings
 SMTP_SERVER = 'smtp.gmail.com'
-SMTP_PORT = 587
+SMTP_PORT = 465
 FROM_EMAIL = 'adityasalian865@gmail.com'
 
 # Validation Patterns
