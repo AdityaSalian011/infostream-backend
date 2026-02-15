@@ -30,7 +30,8 @@ newsapi-python==0.2.7
 newspaper3k==0.2.8
 nltk==3.9.1
 beautifulsoup4==4.13.5
-lxml==5.3.0
+lxml==4.9.3
+lxml_html_clean==0.1.1
 
 # ============================================
 # STOCK DATA
