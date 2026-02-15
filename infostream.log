@@ -1,0 +1,791 @@
+2026-02-15 13:08:15,594 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:08:15,594 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:08:15,594 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:08:15,594 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:08:15,594 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:08:15,594 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:08:15,603 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:08:15,603 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-15 13:08:15,603 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-15 13:08:15,605 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-15 13:08:15,605 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-15 13:08:15,605 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-15 13:08:15,606 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-15 13:08:15,607 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-15 13:08:15,607 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-15 13:08:15,918 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-15 13:08:15,918 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-15 13:08:15,919 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-15 13:08:15,919 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-15 13:08:15,920 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-15 13:08:15,920 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-15 13:08:15,920 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-15 13:09:15,611 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:09:15 IST)" (scheduled at 2026-02-15 13:09:15.603707+05:30)
+2026-02-15 13:09:16,313 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 13:09:16,313 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:10:15 IST)" executed successfully
+2026-02-15 13:10:15,606 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:11:15 IST)" (scheduled at 2026-02-15 13:10:15.603707+05:30)
+2026-02-15 13:10:15,606 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:10:15,606 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:10:15,606 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:10:16,407 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:10:16,407 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:10:16,407 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:10:16,407 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:10:16,407 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:11:15 IST)" executed successfully
+2026-02-15 13:11:15,619 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:12:15 IST)" (scheduled at 2026-02-15 13:11:15.603707+05:30)
+2026-02-15 13:11:15,619 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:11:15,635 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:11:15,635 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:11:16,432 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:11:16,432 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:11:16,432 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:11:16,432 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:11:16,435 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:11:17,188 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:11:17,189 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:11:17,189 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:11:17,189 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:11:17,189 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:12:15 IST)" executed successfully
+2026-02-15 13:12:15,609 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:13:15 IST)" (scheduled at 2026-02-15 13:12:15.603707+05:30)
+2026-02-15 13:12:15,612 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:12:15,612 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:12:15,612 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:12:16,242 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:12:16,242 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:12:16,242 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:12:16,242 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:12:16,242 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:12:16,891 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:12:16,893 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:12:16,896 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:12:16,896 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:12:16,896 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:13:15 IST)" executed successfully
+2026-02-15 13:13:15,623 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:13:15 IST)" (scheduled at 2026-02-15 13:13:15.603707+05:30)
+2026-02-15 13:13:15,634 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:13:15,636 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:13:15,636 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:13:16,607 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:13:16,607 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:13:16,607 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:13:16,607 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:13:16,607 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:13:17,070 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:13:17,077 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:13:17,077 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:13:17,077 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:13:17,077 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:14:15 IST)" executed successfully
+2026-02-15 13:14:15,608 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:15:15 IST)" (scheduled at 2026-02-15 13:14:15.603707+05:30)
+2026-02-15 13:14:15,613 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:14:15,613 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:14:15,615 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:14:16,894 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:14:16,894 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:14:16,894 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:14:16,894 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:14:16,899 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:14:17,825 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:14:17,825 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:14:17,827 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:14:17,827 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:14:17,827 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:15:15 IST)" executed successfully
+2026-02-15 13:15:15,608 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:16:15 IST)" (scheduled at 2026-02-15 13:15:15.603707+05:30)
+2026-02-15 13:15:15,615 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:15:15,615 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:15:15,615 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:15:16,844 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:15:16,844 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:15:16,844 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:15:16,844 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:15:16,844 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:15:17,646 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:15:17,646 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:15:17,648 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:15:17,651 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:15:17,651 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:16:15 IST)" executed successfully
+2026-02-15 13:16:15,613 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:17:15 IST)" (scheduled at 2026-02-15 13:16:15.603707+05:30)
+2026-02-15 13:16:15,620 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:16:15,620 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:16:15,620 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:16:16,341 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:16:16,341 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:16:16,341 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:16:16,349 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:16:16,349 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:16:17,072 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:16:17,072 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:16:17,072 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:16:17,072 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:16:17,072 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:17:15 IST)" executed successfully
+2026-02-15 13:17:15,606 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:18:15 IST)" (scheduled at 2026-02-15 13:17:15.603707+05:30)
+2026-02-15 13:17:15,612 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:17:15,612 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:17:15,612 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:17:16,972 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:17:16,973 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:17:16,973 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:17:16,974 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:17:16,974 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:17:17,738 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:17:17,738 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:17:17,743 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:17:17,745 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:17:17,745 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:18:15 IST)" executed successfully
+2026-02-15 13:18:07,207 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-15 13:18:07,209 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-15 13:31:38,361 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:31:38,361 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:31:38,361 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:31:38,361 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:31:38,374 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:31:38,374 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:31:38,374 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:31:38,374 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-15 13:31:38,377 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-15 13:31:38,377 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-15 13:31:38,377 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-15 13:31:38,377 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-15 13:31:38,377 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-15 13:31:38,377 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-15 13:31:38,377 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-15 13:31:38,396 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-15 13:31:38,396 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-15 13:31:38,396 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-15 13:31:38,396 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-15 13:31:38,396 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-15 13:31:38,396 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-15 13:31:38,396 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-15 13:32:38,392 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:32:38 IST)" (scheduled at 2026-02-15 13:32:38.374138+05:30)
+2026-02-15 13:32:38,852 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:32:38,852 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:32:38,852 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:32:39,177 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:32:39,177 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:32:39,177 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:32:39,179 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:32:39,179 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:32:39,179 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:32:39,526 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:32:39,526 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:32:39,526 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:32:39,526 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:32:39,526 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:32:39,526 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:33:38 IST)" executed successfully
+2026-02-15 13:33:38,377 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:34:38 IST)" (scheduled at 2026-02-15 13:33:38.374138+05:30)
+2026-02-15 13:33:38,384 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:33:38,384 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:33:38,384 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:33:38,785 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:33:38,785 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:33:38,785 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:33:38,785 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:33:38,785 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:33:38,785 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:33:39,131 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:33:39,131 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:33:39,131 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:33:39,131 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:33:39,131 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:33:39,134 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:34:38 IST)" executed successfully
+2026-02-15 13:33:53,722 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-15 13:33:53,722 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-15 13:35:03,912 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:35:03,912 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:35:03,912 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:35:03,912 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:35:03,912 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:35:03,917 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:35:03,917 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:35:03,917 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-15 13:35:03,920 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-15 13:35:03,920 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-15 13:35:03,920 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-15 13:35:03,920 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-15 13:35:03,920 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-15 13:35:03,920 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-15 13:35:03,920 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-15 13:35:03,945 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-15 13:35:03,945 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-15 13:35:03,945 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-15 13:35:03,946 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-15 13:35:03,946 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-15 13:35:03,946 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-15 13:35:03,946 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-15 13:36:03,929 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:36:03 IST)" (scheduled at 2026-02-15 13:36:03.917765+05:30)
+2026-02-15 13:36:03,936 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:36:03,936 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:36:03,936 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:36:04,396 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:36:04,396 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:36:04,396 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:36:04,396 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:36:04,396 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:36:04,396 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:36:04,746 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:36:04,746 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:36:04,746 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:36:04,746 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:36:04,746 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:36:04,746 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:37:03 IST)" executed successfully
+2026-02-15 13:37:03,932 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:38:03 IST)" (scheduled at 2026-02-15 13:37:03.917765+05:30)
+2026-02-15 13:37:03,932 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:37:03,932 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:37:03,936 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:37:04,539 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:37:04,539 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:37:04,539 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:37:04,539 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:37:04,544 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:37:04,544 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:37:05,349 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:37:05,349 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:37:05,349 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:37:05,357 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:37:05,357 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:37:05,360 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:38:03 IST)" executed successfully
+2026-02-15 13:38:03,924 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:39:03 IST)" (scheduled at 2026-02-15 13:38:03.917765+05:30)
+2026-02-15 13:38:03,928 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:38:03,928 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:38:03,928 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:38:04,621 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:38:04,621 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:38:04,621 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:38:04,621 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:38:04,621 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:38:04,621 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:38:05,391 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:38:05,393 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:38:05,393 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:38:05,395 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:38:05,395 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:38:05,397 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:39:03 IST)" executed successfully
+2026-02-15 13:39:03,926 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:40:03 IST)" (scheduled at 2026-02-15 13:39:03.917765+05:30)
+2026-02-15 13:39:03,931 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:39:03,931 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:39:03,931 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:39:04,633 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:39:04,634 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:39:04,634 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:39:04,634 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:39:04,634 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:39:04,634 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:39:05,382 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:39:05,384 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:39:05,384 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:39:05,385 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:39:05,385 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:39:05,385 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:40:03 IST)" executed successfully
+2026-02-15 13:40:03,932 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:41:03 IST)" (scheduled at 2026-02-15 13:40:03.917765+05:30)
+2026-02-15 13:40:03,938 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:40:03,938 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:40:03,941 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:40:04,639 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:40:04,639 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:40:04,646 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:40:04,646 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:40:04,646 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:40:04,648 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:40:05,336 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:40:05,336 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:40:05,336 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:40:05,336 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:40:05,336 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:40:05,336 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:41:03 IST)" executed successfully
+2026-02-15 13:41:03,922 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:42:03 IST)" (scheduled at 2026-02-15 13:41:03.917765+05:30)
+2026-02-15 13:41:03,922 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:41:03,922 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:41:03,922 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:41:04,267 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:41:04,267 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:41:04,267 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:41:04,267 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:41:04,267 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:41:04,267 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:41:04,591 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:41:04,591 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:41:04,591 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:41:04,591 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:41:04,591 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:41:04,591 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:42:03 IST)" executed successfully
+2026-02-15 13:42:03,935 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:43:03 IST)" (scheduled at 2026-02-15 13:42:03.917765+05:30)
+2026-02-15 13:42:03,939 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:42:03,939 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:42:03,939 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:42:04,351 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:42:04,351 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:42:04,351 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:42:04,351 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:42:04,351 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:42:04,353 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:42:04,742 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:42:04,742 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:42:04,742 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:42:04,742 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:42:04,744 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:42:04,745 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:43:03 IST)" executed successfully
+2026-02-15 13:43:03,936 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:44:03 IST)" (scheduled at 2026-02-15 13:43:03.917765+05:30)
+2026-02-15 13:43:03,941 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:43:03,941 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:43:03,941 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:43:04,386 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:43:04,405 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:43:04,418 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:43:04,420 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:43:04,420 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:43:04,420 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:43:04,750 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:43:04,750 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:43:04,750 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:43:04,750 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:43:04,750 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:43:04,750 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:44:03 IST)" executed successfully
+2026-02-15 13:44:03,928 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:45:03 IST)" (scheduled at 2026-02-15 13:44:03.917765+05:30)
+2026-02-15 13:44:03,929 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:44:03,933 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:44:03,934 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:44:04,469 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:44:04,469 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:44:04,469 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:44:04,471 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:44:04,471 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:44:04,471 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:44:04,866 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:44:04,866 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:44:04,866 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:44:04,866 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:44:04,867 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:44:04,867 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:45:03 IST)" executed successfully
+2026-02-15 13:45:03,924 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:46:03 IST)" (scheduled at 2026-02-15 13:45:03.917765+05:30)
+2026-02-15 13:45:03,924 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:45:03,924 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:45:03,924 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:45:04,302 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:45:04,302 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:45:04,302 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:45:04,302 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:45:04,302 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:45:04,317 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:45:04,672 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:45:04,672 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:45:04,672 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:45:04,672 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:45:04,672 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:45:04,675 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:46:03 IST)" executed successfully
+2026-02-15 13:46:03,940 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:47:03 IST)" (scheduled at 2026-02-15 13:46:03.917765+05:30)
+2026-02-15 13:46:03,944 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:46:03,946 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:46:03,946 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:46:04,329 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:46:04,329 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:46:04,329 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:46:04,329 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:46:04,329 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:46:04,329 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:46:04,755 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:46:04,755 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:46:04,755 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:46:04,755 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:46:04,758 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:46:04,758 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:47:03 IST)" executed successfully
+2026-02-15 13:47:03,935 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:48:03 IST)" (scheduled at 2026-02-15 13:47:03.917765+05:30)
+2026-02-15 13:47:03,935 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:47:03,935 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:47:03,935 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:47:04,264 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:47:04,264 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:47:04,264 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:47:04,264 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:47:04,264 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:47:04,264 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:47:04,598 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:47:04,598 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:47:04,598 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:47:04,598 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:47:04,598 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:47:04,598 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:48:03 IST)" executed successfully
+2026-02-15 13:48:03,931 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:49:03 IST)" (scheduled at 2026-02-15 13:48:03.917765+05:30)
+2026-02-15 13:48:03,932 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:48:03,932 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:48:03,932 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:48:04,270 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:48:04,270 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:48:04,270 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:48:04,270 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:48:04,270 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:48:04,270 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:48:04,642 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:48:04,642 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:48:04,642 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:48:04,642 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:48:04,642 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:48:04,642 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:49:03 IST)" executed successfully
+2026-02-15 13:49:03,938 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:50:03 IST)" (scheduled at 2026-02-15 13:49:03.917765+05:30)
+2026-02-15 13:49:03,942 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:49:03,945 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:49:03,947 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:49:04,360 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:49:04,360 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:49:04,360 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:49:04,360 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:49:04,360 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:49:04,360 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:49:04,782 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:49:04,782 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:49:04,782 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:49:04,782 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:49:04,782 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:49:04,782 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:50:03 IST)" executed successfully
+2026-02-15 13:50:03,926 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:51:03 IST)" (scheduled at 2026-02-15 13:50:03.917765+05:30)
+2026-02-15 13:50:03,930 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:50:03,930 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:50:03,930 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:50:04,277 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:50:04,279 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:50:04,279 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:50:04,279 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:50:04,279 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:50:04,279 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:50:04,727 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:50:04,727 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:50:04,727 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:50:04,727 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:50:04,727 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:50:04,727 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:51:03 IST)" executed successfully
+2026-02-15 13:51:03,946 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:52:03 IST)" (scheduled at 2026-02-15 13:51:03.917765+05:30)
+2026-02-15 13:51:03,983 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:51:03,983 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:51:03,985 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:51:04,345 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:51:04,345 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:51:04,345 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:51:04,345 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:51:04,345 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:51:04,345 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:51:04,677 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:51:04,677 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:51:04,677 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:51:04,677 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:51:04,677 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:51:04,677 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:52:03 IST)" executed successfully
+2026-02-15 13:52:03,924 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:53:03 IST)" (scheduled at 2026-02-15 13:52:03.917765+05:30)
+2026-02-15 13:52:03,928 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:52:03,931 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:52:03,931 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:52:05,342 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:52:05,342 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:52:05,342 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:52:05,342 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:52:05,342 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:52:05,342 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:52:06,821 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:52:06,821 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:52:06,823 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:52:06,823 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:52:06,823 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:52:06,823 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:53:03 IST)" executed successfully
+2026-02-15 13:52:14,071 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-15 13:52:14,071 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-15 13:52:28,710 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:52:28,710 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:52:28,717 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:52:28,717 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:52:28,717 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:52:28,719 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:52:28,721 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 13:52:28,724 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-15 13:52:28,726 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-15 13:52:28,730 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-15 13:52:28,733 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-15 13:52:28,733 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-15 13:52:28,735 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-15 13:52:28,738 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-15 13:52:28,738 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-15 13:52:28,761 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-15 13:52:28,761 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-15 13:52:28,761 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-15 13:52:28,763 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-15 13:52:28,763 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-15 13:52:28,763 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-15 13:52:28,763 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-15 13:53:28,730 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:53:28 IST)" (scheduled at 2026-02-15 13:53:28.721076+05:30)
+2026-02-15 13:53:28,730 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 13:53:28,730 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 13:53:28,730 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 13:53:29,458 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:53:29,458 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:53:29,458 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:53:29,464 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 13:53:29,464 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 13:53:29,464 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 13:53:30,249 - news.utils - ERROR - Error fetching news content: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:53:30,249 - infoStreamDigest - ERROR - Failed to generate HTML for adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:53:30,249 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'
+2026-02-15 13:53:30,249 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:53:30,249 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}, {'news_topic': 'sports', 'error': "News API error: Unexpected error: expected string or bytes-like object, got 'NoneType'"}]}
+2026-02-15 13:53:30,249 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 13:54:28 IST)" executed successfully
+2026-02-15 13:54:03,386 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-15 13:54:03,386 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-15 14:09:11,177 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:09:11,177 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:09:11,177 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:09:11,177 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:09:11,177 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:09:11,177 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:09:11,177 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:09:11,177 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-15 14:09:11,177 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-15 14:09:11,188 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-15 14:09:11,188 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-15 14:09:11,190 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-15 14:09:11,190 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-15 14:09:11,190 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-15 14:09:11,190 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-15 14:09:11,233 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-15 14:09:11,233 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-15 14:09:11,233 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-15 14:09:11,234 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-15 14:09:11,234 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-15 14:09:11,237 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-15 14:09:11,237 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-15 14:10:11,185 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:10:11 IST)" (scheduled at 2026-02-15 14:10:11.177782+05:30)
+2026-02-15 14:10:11,192 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 14:10:11,192 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 14:10:11,192 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 14:10:12,159 - news.utils - INFO - Fetched 10 articles for topic: business
+2026-02-15 14:10:12,161 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-15 14:10:12,646 - infoStreamDigest - INFO - Fetching stock data
+2026-02-15 14:10:19,166 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-15 14:10:19,166 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-15 14:10:19,166 - infoStreamDigest - ERROR - Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+Traceback (most recent call last):
+  File "D:\code\py_project\infoStreamV2\backend\infoStreamDigest.py", line 227, in send_email_to_user
+    email_sent, email_error = self.html_email.send_email(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:10:19,166 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:10:19,166 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 14:10:19,166 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 14:10:19,166 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 14:10:20,014 - news.utils - INFO - Fetched 10 articles for topic: sports
+2026-02-15 14:10:20,016 - infoStreamDigest - INFO - Fetching weather for city: Tokyo
+2026-02-15 14:10:20,438 - infoStreamDigest - INFO - Fetching stock data
+2026-02-15 14:10:20,562 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-15 14:10:20,562 - infoStreamDigest - INFO - Sending email to adityasalian865@gmail.com
+2026-02-15 14:10:20,562 - infoStreamDigest - ERROR - Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+Traceback (most recent call last):
+  File "D:\code\py_project\infoStreamV2\backend\infoStreamDigest.py", line 227, in send_email_to_user
+    email_sent, email_error = self.html_email.send_email(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:10:20,562 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:10:20,562 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}, {'news_topic': 'sports', 'error': "Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}]}
+2026-02-15 14:10:20,562 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}, {'news_topic': 'sports', 'error': "Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}]}
+2026-02-15 14:10:20,562 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:11:11 IST)" executed successfully
+2026-02-15 14:11:11,195 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:12:11 IST)" (scheduled at 2026-02-15 14:11:11.177782+05:30)
+2026-02-15 14:11:11,197 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 14:11:11,197 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 14:11:11,197 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 14:11:12,029 - news.utils - INFO - Fetched 10 articles for topic: business
+2026-02-15 14:11:12,029 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-15 14:11:12,976 - infoStreamDigest - INFO - Fetching stock data
+2026-02-15 14:11:14,417 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-15 14:11:14,417 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-15 14:11:14,419 - infoStreamDigest - ERROR - Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+Traceback (most recent call last):
+  File "D:\code\py_project\infoStreamV2\backend\infoStreamDigest.py", line 227, in send_email_to_user
+    email_sent, email_error = self.html_email.send_email(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:11:14,419 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:11:14,419 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 14:11:14,422 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 14:11:14,422 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 14:11:15,157 - news.utils - INFO - Fetched 10 articles for topic: sports
+2026-02-15 14:11:15,157 - infoStreamDigest - INFO - Fetching weather for city: Tokyo
+2026-02-15 14:11:15,645 - infoStreamDigest - INFO - Fetching stock data
+2026-02-15 14:11:15,802 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-15 14:11:15,802 - infoStreamDigest - INFO - Sending email to adityasalian865@gmail.com
+2026-02-15 14:11:15,802 - infoStreamDigest - ERROR - Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+Traceback (most recent call last):
+  File "D:\code\py_project\infoStreamV2\backend\infoStreamDigest.py", line 227, in send_email_to_user
+    email_sent, email_error = self.html_email.send_email(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:11:15,802 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:11:15,802 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}, {'news_topic': 'sports', 'error': "Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}]}
+2026-02-15 14:11:15,802 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}, {'news_topic': 'sports', 'error': "Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}]}
+2026-02-15 14:11:15,802 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:12:11 IST)" executed successfully
+2026-02-15 14:12:11,182 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:13:11 IST)" (scheduled at 2026-02-15 14:12:11.177782+05:30)
+2026-02-15 14:12:11,185 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 14:12:11,185 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 14:12:11,185 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 14:12:12,039 - news.utils - INFO - Fetched 10 articles for topic: business
+2026-02-15 14:12:12,039 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-15 14:12:12,507 - infoStreamDigest - INFO - Fetching stock data
+2026-02-15 14:12:13,182 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-15 14:12:13,182 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-15 14:12:13,182 - infoStreamDigest - ERROR - Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+Traceback (most recent call last):
+  File "D:\code\py_project\infoStreamV2\backend\infoStreamDigest.py", line 227, in send_email_to_user
+    email_sent, email_error = self.html_email.send_html_content(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:12:13,222 - infoStreamDigest - ERROR - Failed to send business email to adityasalian011@gmail.com: Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:12:13,222 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 14:12:13,222 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 14:12:13,222 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 14:12:14,089 - news.utils - INFO - Fetched 10 articles for topic: sports
+2026-02-15 14:12:14,089 - infoStreamDigest - INFO - Fetching weather for city: Tokyo
+2026-02-15 14:12:14,515 - infoStreamDigest - INFO - Fetching stock data
+2026-02-15 14:12:14,656 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-15 14:12:14,656 - infoStreamDigest - INFO - Sending email to adityasalian865@gmail.com
+2026-02-15 14:12:14,656 - infoStreamDigest - ERROR - Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+Traceback (most recent call last):
+  File "D:\code\py_project\infoStreamV2\backend\infoStreamDigest.py", line 227, in send_email_to_user
+    email_sent, email_error = self.html_email.send_html_content(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:12:14,656 - infoStreamDigest - ERROR - Failed to send sports email to adityasalian865@gmail.com: Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'
+2026-02-15 14:12:14,656 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}, {'news_topic': 'sports', 'error': "Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}]}
+2026-02-15 14:12:14,656 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 2 user(s): sent 0 email(s), 2 failed', 'total_users': 2, 'emails_sent': 0, 'emails_failed': 2, 'errors': [{'news_topic': 'business', 'error': "Unexpected error sending email to adityasalian011@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}, {'news_topic': 'sports', 'error': "Unexpected error sending email to adityasalian865@gmail.com: 'HTMLEmail' object has no attribute 'send_email'"}]}
+2026-02-15 14:12:14,656 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:13:11 IST)" executed successfully
+2026-02-15 14:12:21,589 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-15 14:12:21,589 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-15 14:12:27,254 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:12:27,258 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:12:27,258 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:12:27,258 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:12:27,258 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:12:27,258 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:12:27,258 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:12:27,258 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-15 14:12:27,258 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-15 14:12:27,258 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-15 14:12:27,258 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-15 14:12:27,266 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-15 14:12:27,266 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-15 14:12:27,266 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-15 14:12:27,266 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-15 14:12:27,314 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-15 14:12:27,314 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-15 14:12:27,314 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-15 14:12:27,314 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-15 14:12:27,314 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-15 14:12:27,314 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-15 14:12:27,314 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-15 14:13:27,272 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:13:27 IST)" (scheduled at 2026-02-15 14:13:27.258972+05:30)
+2026-02-15 14:13:27,272 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 14:13:27,272 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: business
+2026-02-15 14:13:27,272 - infoStreamDigest - INFO - Fetching news for topic: business
+2026-02-15 14:13:27,775 - news.utils - INFO - Fetched 10 articles for topic: business
+2026-02-15 14:13:27,775 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-15 14:13:27,971 - infoStreamDigest - INFO - Fetching stock data
+2026-02-15 14:13:28,886 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-15 14:13:28,886 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-15 14:13:32,698 - infoStreamDigest - INFO - Successfully sent email to adityasalian011@gmail.com
+2026-02-15 14:13:32,698 - infoStreamDigest - INFO - Successfully sent business email to adityasalian011@gmail.com
+2026-02-15 14:13:32,698 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-15 14:13:32,698 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: sports
+2026-02-15 14:13:32,698 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 14:13:33,179 - news.utils - INFO - Fetched 10 articles for topic: sports
+2026-02-15 14:13:33,179 - infoStreamDigest - INFO - Fetching weather for city: Tokyo
+2026-02-15 14:13:33,390 - infoStreamDigest - INFO - Fetching stock data
+2026-02-15 14:13:33,474 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-15 14:13:33,474 - infoStreamDigest - INFO - Sending email to adityasalian865@gmail.com
+2026-02-15 14:13:36,864 - infoStreamDigest - INFO - Successfully sent email to adityasalian865@gmail.com
+2026-02-15 14:13:36,864 - infoStreamDigest - INFO - Successfully sent sports email to adityasalian865@gmail.com
+2026-02-15 14:13:36,880 - infoStreamDigest - INFO - Reset isImmediate flag for 2 schedules
+2026-02-15 14:13:36,880 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'success', 'message': 'Processed 2 user(s): sent 2 email(s), 0 failed', 'total_users': 2, 'emails_sent': 2, 'emails_failed': 0, 'errors': []}
+2026-02-15 14:13:36,880 - scheduler - INFO - Immediate digest job with result: {'status': 'success', 'message': 'Processed 2 user(s): sent 2 email(s), 0 failed', 'total_users': 2, 'emails_sent': 2, 'emails_failed': 0, 'errors': []}
+2026-02-15 14:13:36,880 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:14:27 IST)" executed successfully
+2026-02-15 14:14:27,270 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:15:27 IST)" (scheduled at 2026-02-15 14:14:27.258972+05:30)
+2026-02-15 14:14:27,270 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:14:27,270 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:15:27 IST)" executed successfully
+2026-02-15 14:15:27,265 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:16:27 IST)" (scheduled at 2026-02-15 14:15:27.258972+05:30)
+2026-02-15 14:15:27,267 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:15:27,267 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:16:27 IST)" executed successfully
+2026-02-15 14:16:27,259 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:17:27 IST)" (scheduled at 2026-02-15 14:16:27.258972+05:30)
+2026-02-15 14:16:27,259 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:16:27,268 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:17:27 IST)" executed successfully
+2026-02-15 14:17:27,268 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:18:27 IST)" (scheduled at 2026-02-15 14:17:27.258972+05:30)
+2026-02-15 14:17:27,273 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:17:27,273 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:18:27 IST)" executed successfully
+2026-02-15 14:18:27,262 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:19:27 IST)" (scheduled at 2026-02-15 14:18:27.258972+05:30)
+2026-02-15 14:18:27,265 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:18:27,265 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:19:27 IST)" executed successfully
+2026-02-15 14:19:27,270 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:20:27 IST)" (scheduled at 2026-02-15 14:19:27.258972+05:30)
+2026-02-15 14:19:27,275 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:19:27,277 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:20:27 IST)" executed successfully
+2026-02-15 14:20:27,265 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:21:27 IST)" (scheduled at 2026-02-15 14:20:27.258972+05:30)
+2026-02-15 14:20:27,265 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:20:27,265 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:21:27 IST)" executed successfully
+2026-02-15 14:21:27,272 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:22:27 IST)" (scheduled at 2026-02-15 14:21:27.258972+05:30)
+2026-02-15 14:21:27,275 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:21:27,275 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:22:27 IST)" executed successfully
+2026-02-15 14:22:27,263 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:23:27 IST)" (scheduled at 2026-02-15 14:22:27.258972+05:30)
+2026-02-15 14:22:27,263 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:22:27,263 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:23:27 IST)" executed successfully
+2026-02-15 14:23:27,274 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:24:27 IST)" (scheduled at 2026-02-15 14:23:27.258972+05:30)
+2026-02-15 14:23:27,276 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:23:27,278 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:24:27 IST)" executed successfully
+2026-02-15 14:24:27,271 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:25:27 IST)" (scheduled at 2026-02-15 14:24:27.258972+05:30)
+2026-02-15 14:24:27,271 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:24:27,271 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:25:27 IST)" executed successfully
+2026-02-15 14:25:27,272 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:26:27 IST)" (scheduled at 2026-02-15 14:25:27.258972+05:30)
+2026-02-15 14:25:27,272 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:25:27,272 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:26:27 IST)" executed successfully
+2026-02-15 14:26:27,264 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:27:27 IST)" (scheduled at 2026-02-15 14:26:27.258972+05:30)
+2026-02-15 14:26:27,268 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:26:27,270 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:27:27 IST)" executed successfully
+2026-02-15 14:27:27,269 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:28:27 IST)" (scheduled at 2026-02-15 14:27:27.258972+05:30)
+2026-02-15 14:27:27,272 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:27:27,273 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:28:27 IST)" executed successfully
+2026-02-15 14:28:27,260 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:29:27 IST)" (scheduled at 2026-02-15 14:28:27.258972+05:30)
+2026-02-15 14:28:27,260 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:28:27,260 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:29:27 IST)" executed successfully
+2026-02-15 14:29:03,879 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-15 14:29:03,879 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-15 14:46:52,741 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:46:52,741 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:46:52,741 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:46:52,741 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:46:52,741 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:46:52,742 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:46:52,742 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-15 14:46:52,743 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-15 14:46:52,743 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-15 14:46:52,743 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-15 14:46:52,743 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-15 14:46:52,743 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-15 14:46:52,743 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-15 14:46:52,743 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-15 14:46:52,744 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-15 14:46:52,848 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-15 14:46:52,848 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-15 14:46:52,848 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-15 14:46:52,848 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-15 14:46:52,848 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-15 14:46:52,848 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-15 14:46:52,848 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-15 14:47:52,747 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:47:52 IST)" (scheduled at 2026-02-15 14:47:52.742474+05:30)
+2026-02-15 14:47:52,754 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-15 14:47:52,754 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: sports
+2026-02-15 14:47:52,754 - infoStreamDigest - INFO - Fetching news for topic: sports
+2026-02-15 14:48:08,470 - news.utils - INFO - Fetched 10 articles for topic: sports
+2026-02-15 14:48:08,470 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-15 14:48:08,702 - infoStreamDigest - INFO - Fetching stock data
+2026-02-15 14:48:11,680 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-15 14:48:11,680 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-15 14:48:15,421 - infoStreamDigest - INFO - Successfully sent email to adityasalian011@gmail.com
+2026-02-15 14:48:15,421 - infoStreamDigest - INFO - Successfully sent sports email to adityasalian011@gmail.com
+2026-02-15 14:48:15,442 - infoStreamDigest - INFO - Reset isImmediate flag for 1 schedules
+2026-02-15 14:48:15,442 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'success', 'message': 'Processed 1 user(s): sent 1 email(s), 0 failed', 'total_users': 1, 'emails_sent': 1, 'emails_failed': 0, 'errors': []}
+2026-02-15 14:48:15,442 - scheduler - INFO - Immediate digest job with result: {'status': 'success', 'message': 'Processed 1 user(s): sent 1 email(s), 0 failed', 'total_users': 1, 'emails_sent': 1, 'emails_failed': 0, 'errors': []}
+2026-02-15 14:48:15,442 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:48:52 IST)" executed successfully
+2026-02-15 14:48:52,746 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:49:52 IST)" (scheduled at 2026-02-15 14:48:52.742474+05:30)
+2026-02-15 14:48:52,749 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:48:52,750 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:49:52 IST)" executed successfully
+2026-02-15 14:49:52,752 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:50:52 IST)" (scheduled at 2026-02-15 14:49:52.742474+05:30)
+2026-02-15 14:49:52,752 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-15 14:49:52,752 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 14:50:52 IST)" executed successfully
+2026-02-15 14:50:16,437 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-15 14:50:16,438 - scheduler - INFO - Scheduler stopped gracefully

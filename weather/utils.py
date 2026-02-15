@@ -1,4 +1,4 @@
-import requests, json
+import requests
 
 # def store_weather_api(api_key ,city_name, file_name):
 def get_weather_api(api_key ,city_name):
@@ -71,9 +71,3 @@ def check_response_validity(response):
     if response.get('cod') != 200:
         return {'error': response['message']}
     return None
-
-def store_weather_data(weather_data, file_name):
-    """Stores weather information as a json formatted file."""
-    with open(file_name, 'w', encoding='utf-8') as f:
-        json_content = json.dumps(weather_data, indent=4)
-        f.write(json_content)

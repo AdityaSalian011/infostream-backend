@@ -1,7 +1,8 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from html_email.password import my_password
+import os
+from dotenv import load_dotenv
 
 from config import (
     SMTP_SERVER,
@@ -9,12 +10,15 @@ from config import (
     FROM_EMAIL
 )
 
+load_dotenv()
+SMTP_PASSWORD = os.getenv('SMTP_PASSWORD')
+
 class HTMLEmail:
     def send_html_content(self, to_email, html_content, subject):
         """A method to send html email at the given address"""
         try:
             from_email = FROM_EMAIL    ## my email address
-            app_password = my_password           ## my password
+            app_password = SMTP_PASSWORD           ## my password
 
             msg = MIMEMultipart()
             msg['From'] = from_email

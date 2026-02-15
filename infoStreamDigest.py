@@ -52,6 +52,8 @@ class InfoStreamDigest:
                 UserDetail.id,
                 UserDetail.email,
                 UserSetting.city,
+                UserSetting.newsApi,
+                UserSetting.weatherApi,
                 NewsTopicAndScheduleTime.newsTopic,
                 NewsTopicAndScheduleTime.deliveryTime,
             ).join(
@@ -86,13 +88,15 @@ class InfoStreamDigest:
                         'id': row[0],
                         'email': row[1],
                         'city': row[2],
+                        'news_api_key': row[3],
+                        'weather_api_key': row[4],
                         'news_preferences': []  # FIX: Initialize the list!
                     }
 
                 # Add news preference to user's list
                 user_data_map[user_id]['news_preferences'].append({
-                    'news_topic': row[3],
-                    'delivery_time': row[4],
+                    'news_topic': row[5],
+                    'delivery_time': row[6],
                 })
 
             user_data = list(user_data_map.values())
@@ -108,7 +112,9 @@ class InfoStreamDigest:
     def _generate_html(
         self, 
         news_topic: str, 
-        city_name: str
+        city_name: str,
+        news_api_key: str,
+        weather_api_key: str
     ):
         """
         Generate HTML content from current data.
@@ -123,7 +129,10 @@ class InfoStreamDigest:
         try:
             # Fetch news data
             logger.info(f"Fetching news for topic: {news_topic}")
-            news_data = self.news_api.get_top_news(topic=news_topic)
+            news_data = self.news_api.get_top_news(
+                topic=news_topic,
+                api_key=news_api_key
+            )
             
             # Check if error was returned as string
             if isinstance(news_data, str):
@@ -136,7 +145,8 @@ class InfoStreamDigest:
             # Fetch weather data
             logger.info(f"Fetching weather for city: {city_name}")
             weather_data = self.weather_api.get_weather_info(
-                city_name=city_name
+                city_name=city_name,
+                api_key=weather_api_key
             )
             
             if isinstance(weather_data, str):
@@ -182,7 +192,9 @@ class InfoStreamDigest:
         self, 
         user_email: str, 
         news_topic: str, 
-        city_name: str
+        city_name: str,
+        news_api_key: str,
+        weather_api_key: str
     ):
         """
         Send personalized news digest to a single user.
@@ -199,7 +211,9 @@ class InfoStreamDigest:
             # Generate HTML content
             rendered_html, html_error = self._generate_html(
                 news_topic, 
-                city_name
+                city_name,
+                news_api_key,
+                weather_api_key
             )
             
             if html_error:
@@ -210,7 +224,7 @@ class InfoStreamDigest:
 
             # Send email
             logger.info(f"Sending email to {user_email}")
-            email_sent, email_error = self.html_email.send_email(
+            email_sent, email_error = self.html_email.send_html_content(
                 to_email=user_email,
                 subject=f"Your {news_topic.title()} News Digest",
                 html_content=rendered_html
@@ -285,6 +299,8 @@ class InfoStreamDigest:
         for user in users:
             user_email = user['email']
             city = user['city']
+            news_api_key = user['news_api_key']
+            weather_api_key = user['weather_api_key']
             
             # Handle multiple news topics per user
             for preference in user['news_preferences']:
@@ -293,7 +309,9 @@ class InfoStreamDigest:
                 success, error = self.send_email_to_user(
                     user_email=user_email,
                     news_topic=news_topic,
-                    city_name=city
+                    city_name=city,
+                    news_api_key=news_api_key,
+                    weather_api_key=weather_api_key
                 )
                 
                 if success:
@@ -347,6 +365,8 @@ class InfoStreamDigest:
                 UserDetail.id,
                 UserDetail.email,
                 UserSetting.city,
+                UserSetting.newsApi,
+                UserSetting.weatherApi,
                 NewsTopicAndScheduleTime.news_id,
                 NewsTopicAndScheduleTime.newsTopic
             ).join(
@@ -376,12 +396,14 @@ class InfoStreamDigest:
                     users_map[user_id] = {
                         'email': row[1],
                         'city': row[2],
+                        'news_api_key': row[3],
+                        'weather_api_key': row[4],
                         'news_preference': []
                     }
 
                 users_map[user_id]['news_preference'].append({
-                    'schedule_id': row[3],
-                    'news_topic': row[4]
+                    'schedule_id': row[5],
+                    'news_topic': row[6]
                 })
 
             # Track results
@@ -395,6 +417,8 @@ class InfoStreamDigest:
             for user_id, user_info in users_map.items():
                 email = user_info['email']
                 city = user_info['city']
+                news_api_key = user_info['news_api_key']
+                weather_api_key = user_info['weather_api_key']
 
                 logger.info(f"Processing immediate emails for user: {email}")
 
@@ -408,7 +432,9 @@ class InfoStreamDigest:
                     success, error = self.send_email_to_user(
                         user_email=email,
                         news_topic=news_topic,
-                        city_name=city
+                        city_name=city,
+                        news_api_key=news_api_key,
+                        weather_api_key=weather_api_key
                     )
 
                     if success:

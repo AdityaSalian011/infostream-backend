@@ -1,5 +1,4 @@
 import yfinance as yf
-import json
 
 from config import (
     STOCK_MARKETS,
@@ -52,9 +51,3 @@ def get_absolute_percent_change(stock_data):
     percent_change = (absolute_change/previous_close)* 100
 
     return f'{latest_close:.2f}', f'{absolute_change:.2f}', f'{percent_change:.2f}'
-
-def store_stock_data(stock_data, file_name):
-    """Storing stock data as a json formatted file."""
-    with open(file_name, 'w', encoding='utf-8') as f:
-        json_content = json.dumps(stock_data, indent=4)
-        f.write(json_content)

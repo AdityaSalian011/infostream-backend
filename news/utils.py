@@ -1,6 +1,7 @@
 from newsapi import NewsApiClient
 from newspaper import Article
-import datetime, json, requests
+import datetime, requests
+import logging
 
 from config import (
     NEWS_CATEGORIES, 
@@ -9,6 +10,8 @@ from config import (
     MAX_ARTICLES,
     MIN_ARTICLE_WORDS
 )
+
+logger = logging.getLogger(__name__)
 
 def get_from_to_dates():
     """A helper function to retrieve today and yesterday datetime."""
@@ -64,65 +67,80 @@ def get_news_content(api_key, topic, language=NEWS_LANGUAGE, sort_by=NEWS_SORT_B
 
 # def store_top_10_news(api_key, topic, file_name):
 def get_top_10_news(api_key, topic):
-    """Stores top 10(if available) news article data inside specified filepath."""
+    """
+    SIMPLIFIED VERSION: Uses News API data directly without scraping.
+    Much faster and more reliable than newspaper3k scraping.
+    """
     articles, error = get_news_content(api_key, topic)
     if error:
+        logger.error(f'Error fetching news content: {error}')
         return error
     
+    if not articles:
+        logger.warning(f"No articles found for topic: {topic}")
+        return "No articles found for this topic"
+    
     article_content = []
-    for article in articles:
-        if len(article_content) == MAX_ARTICLES:
+    failed_count = 0
+
+    for article in articles:  
+        # Stop if we have enough articles
+        if len(article_content) >= MAX_ARTICLES:
             break
-        url = article['url']
+
+        # Get URL - skip if missing or invalid
+        url = article.get('url')
+        if not url or not isinstance(url, str):
+            logger.warning('Skipping article with invalid URL')
+            failed_count += 1
+            continue
+
+        # Get News API metadata (fast - already fetched)
+        title = article.get('title', 'No Title')
+        author = article.get('author', 'Unknown')
+        published_at = article.get('publishedAt', 'Unknown')
+        description = article.get('description', 'No description available')
+
+        # Parse publish date
+        publish_date = 'Unknown'
+        if published_at and published_at != 'Unknown':
+            try:
+                publish_date = published_at[:10]  # Get YYYY-MM-DD
+            except:
+                publish_date = published_at
+
         try:
             article_ = Article(url)
-            init_article_methods(article=article_)
+            article_.download()
+            article_.parse()
 
-            is_valid_text = check_valid_article_text(article=article_)
-            if is_valid_text:
+            # Validate we got good text
+            if not article_.text or len(article_.text.strip()) < MIN_ARTICLE_WORDS:
+                logger.warning(f"Article too short or empty: {url}")
+                failed_count += 1
+                continue
 
-                article_info = store_article_info(url, article=article_)
-                article_content.append(article_info)
+            # Use scraped text + News API metadata
+            article_info = {
+                'url': url,
+                'title': title,  # From News API (reliable)
+                'authors': author,  # From News API (reliable)
+                'publish_date': publish_date,  # From News API (reliable)
+                'summary': description,  # From News API (fast, professional)
+                'text': article_.text  # From scraping (full content!)
+            }
+
+            article_content.append(article_info)
+            logger.info(f"✅ Scraped: {title[:50]}...")
 
         except Exception as e:
-            print(f'Failed to scrap data as exception occured\n{e}')
+            logger.warning(f'Failed to scrape {url}: {str(e)}')
+            failed_count += 1
             continue
     
-    return article_content
-    # store_article_in_json(article=article_content, file_name=file_name)
+    logger.info(f"Fetched {len(article_content)} articles for topic: {topic}")
 
-def init_article_methods(article):
-    """A helper function to initialize article object's methods."""
-    article.download()
-    article.parse()
-    article.nlp()
-
-def store_article_info(url, article):
-    """A helper function to store data scrapped through article object"""
-    article_info = {
-        'url': url,
-        'title': article.title,
-        'authors': article.authors[0] if article.authors else None,
-        'publish_date': str(article.publish_date.date()) if article.publish_date else None,
-        'summary': article.summary,
-        'text': article.text
-    }
-    return article_info
-
-def check_valid_article_text(article):
-    """A helper function to check articles' text(main news content) and summary validity"""
-    article_text = article.text.strip()
-    article_summary = article.summary.strip()
-    if len(article_text.split()) < MIN_ARTICLE_WORDS or len(article_text.split()) <= len(article_summary.split()):
-        """If len of article text is less than 50 OR if it's length is <= article summary.  Return False"""
-        return False
-    else:
-        return True
+    if not article_content:
+        return "Could not fetch any valid articles. Please try again later."
     
-def store_article_in_json(article, file_name):
-    """A helper function to store news article data inside the specified file.
-        File is stored as a json format. For easy access and retieve of data.
-    """
-    with open(file_name, 'w', encoding='utf-8') as json_file:
-        json_content = json.dumps(article, indent=4)
-        json_file.write(json_content)
+    return article_content
