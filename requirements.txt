@@ -1,4 +1,11 @@
 # ============================================
+# LIGHTWEIGHT VERSION - NO WEB SCRAPING
+# ============================================
+# This version uses News API descriptions only
+# Deploys 3x faster and has no build issues
+# Articles will show descriptions (~200 chars) instead of full text
+
+# ============================================
 # WEB FRAMEWORK
 # ============================================
 fastapi==0.115.6
@@ -24,14 +31,9 @@ pytz==2024.2
 tzlocal==5.2
 
 # ============================================
-# NEWS API & WEB SCRAPING
+# NEWS API (No Scraping - Just API Data)
 # ============================================
 newsapi-python==0.2.7
-newspaper3k==0.2.8
-nltk==3.9.1
-beautifulsoup4==4.13.5
-lxml==4.9.3
-lxml_html_clean==0.1.1
 
 # ============================================
 # STOCK DATA
