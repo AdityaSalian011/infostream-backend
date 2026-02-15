@@ -19,7 +19,7 @@ class HTMLEmail:
             
             message = Mail(
                 from_email=FROM_EMAIL,
-                to_email=to_email,
+                to_emails=to_email,
                 subject=subject,
                 html_content=html_content
             )
