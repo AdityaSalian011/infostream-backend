@@ -64,14 +64,11 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        'http://localhost:8000',
-        'http://localhost:3000',
-        'http://127.0.0.1:8000',
-        'http://127.0.0.1:3000',
         'http://127.0.0.1:5500',
+        "http://localhost:5500",
+        "https://infostream-frontend.vercel.app",
         os.getenv(
             'FRONTEND_URL',
-            'http://localhost:3000'
         )
     ],
     allow_credentials=True,

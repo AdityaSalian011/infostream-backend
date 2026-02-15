@@ -36,6 +36,6 @@ class HTMLEmail:
         
 if __name__=='__main__':
     email = HTMLEmail()
-    success, error = email.send_html_content('adityasalian06@gmail.com', 'TEST', 'test')
+    success, error = email.send_html_content('adityasalian011@gmail.com', 'TEST', 'test')
     print(success)
     print(error)
