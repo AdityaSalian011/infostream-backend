@@ -1,8 +1,6 @@
 import os
-import smtplib
 import logging
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+import requests
 from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
@@ -13,23 +11,33 @@ class HTMLEmail:
         """A method to send html email at the given address"""
         try:
             from_email = os.getenv('FROM_EMAIL')
-            gmail_app_password = os.getenv('GMAIL_APP_PASSWORD')
+            smtp_key = os.getenv('SMTP_KEY')
 
-            if not from_email or not gmail_app_password:
+            if not from_email or not smtp_key:
                 return None, 'Gmail credentials not configured'
             
-            message = MIMEMultipart('alternative')
-            message['Subject'] = subject
-            message['From'] = from_email
-            message['To'] = to_email
-            message.attach(MIMEText(html_content, 'html'))
+            response = requests.post(
+                'https://api.brevo.com/v3/smtp/email',
+                headers={
+                    'api_key': smtp_key,
+                    'Content-Type': 'application/json'
+                },
+                json={
+                    'sender': {'email': from_email},
+                    'to': [{'email': to_email}],
+                    'subject': subject,
+                    'htmlContent': html_content
+                }
+            )
 
-            with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-                server.login(from_email, gmail_app_password)
-                server.sendmail(from_email, to_email, message.as_string())
-
-            logger.info(f"✅ Email sent to {to_email}")
-            return 'Email sent successfully', None
+            if response.status_code == 201:
+                logger.info(f"✅ Email sent to {to_email}")
+                return 'Email sent successfully', None
+            else:
+                error = f'Brevo error: {response.status_code} - {response.text}'
+                logger.error(error)
+                return None, error
+            
         except Exception as exc:
             error = f'Failed to send email:\n{exc}'
             logger.error(error)
