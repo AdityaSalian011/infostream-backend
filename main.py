@@ -15,11 +15,6 @@ from fastapi.security import OAuth2PasswordBearer
 from database import engine, Base, get_db
 from models import UserDetail, UserSetting, NewsTopicAndScheduleTime
 
-# Import NewsApi, WeatherAPI and StockAPI
-from news.news import NewsAPI
-from weather.weather import WeatherAPI
-from stock.stock import StockAPI
-
 # Scheduling task modules
 from contextlib import asynccontextmanager
 from scheduler import start_scheduler, stop_scheduler, scheduler
