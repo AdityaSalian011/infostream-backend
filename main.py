@@ -6,6 +6,11 @@ from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 from hashlib import sha256
 
+## JWT Dependencies
+from jose import JWTError, jwt
+from datetime import datetime, timedelta, timezone
+from fastapi.security import OAuth2PasswordBearer
+
 # Import database components
 from database import engine, Base, get_db
 from models import UserDetail, UserSetting, NewsTopicAndScheduleTime
@@ -20,7 +25,10 @@ from contextlib import asynccontextmanager
 from scheduler import start_scheduler, stop_scheduler, scheduler
 
 import os
+from dotenv import load_dotenv
 import logging
+
+load_dotenv()
 
 logging.basicConfig(
     level=logging.INFO,
@@ -58,6 +66,70 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
     sha256_hash = sha256(plain_password.encode('utf-8')).hexdigest()
     return pwd_context.verify(sha256_hash, hashed_password)
 
+SECRET_KEY = os.getenv('SECRET_KEY', 'FvJ6AYVkzHU0lDetGGNgsOwbxvbw51lve7X2srr1RLd')
+ALGORITHM = os.getenv('ALGORITHM', 'HS256')
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES', '300'))
+
+# OAuth2 scheme for token authentication
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl='login')
+
+def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
+    """
+    Create a JWT access token
+    - data: Dictionary containing user information (typically just user_id)
+    - expires_delta: Token expiration time
+    """
+    to_encode = data.copy()
+
+    if expires_delta:
+        expires = datetime.now(timezone.utc) + expires_delta
+    else:
+        expires = datetime.now(timezone.utc) + timedelta(minutes=60)
+
+    to_encode.update({
+        'exp': expires
+    })
+
+    encoded_jwt = jwt.encode(to_encode, key=SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+async def get_current_user(
+        token: str = Depends(oauth2_scheme),
+        db: Session = Depends(get_db)
+):
+    """
+    Verify JWT token and return current user from database
+    - This is used as a dependency for protected routes
+    - Automatically validates token and fetches user data
+    """
+    credentials_exception = HTTPException(
+        status_code=401,
+        detail='Could not validate credentials',
+        headers={'WWW-Authenticate': 'Bearer'}
+    )
+
+    try:
+        # Decode the jwt token
+        payload = jwt.decode(token, key=SECRET_KEY, algorithms=[ALGORITHM])
+        user_id = payload.get('sub')
+
+        if not user_id:
+            raise credentials_exception
+        
+        user_id = int(user_id)  ## convert str back to int for db query
+    except JWTError:
+        raise credentials_exception
+    
+    # Get the user from database
+    user = db.query(UserDetail).filter(
+        UserDetail.id == user_id
+    ).first()
+
+    if not user:
+        raise credentials_exception
+    
+    return user
+
 # ============================================
 # CORS CONFIGURATION
 # ============================================
@@ -66,7 +138,6 @@ app.add_middleware(
     allow_origins=[
         'http://127.0.0.1:5500',
         "http://localhost:5500",
-        "https://infostream-frontend.vercel.app",
         os.getenv(
             'FRONTEND_URL',
         )
@@ -99,16 +170,6 @@ class UserSignUpRequest(BaseModel):
 class UserLoginRequest(BaseModel):
     email: EmailStr
     password: str
-
-class UserResponse(BaseModel):
-    id: int
-    firstName: str
-    lastName: str
-    fullName: str
-    email: str
-
-    class Config:
-        from_attributes = True
 
 # User Settings Schemas
 class UserSettingRequest(BaseModel):
@@ -149,6 +210,11 @@ class NewsTopicScheduleResponse(BaseModel):
         from_attributes = True
         populate_by_name = True  # Allow both field names
 
+## Token as a response
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
 # ============================================
 # ROOT ENDPOINT
 # ============================================
@@ -182,13 +248,13 @@ async def root():
 # AUTHENTICATION ENDPOINTS
 # ============================================
 
-@app.post('/signup', response_model=UserResponse)
+@app.post('/signup', response_model=Token)
 async def signup_user(user_data: UserSignUpRequest, db: Session = Depends(get_db)):
     """
     Register a new user account.
     - Checks if email already exists
     - Hashes password before storing
-    - Returns user info (without password)
+    - Returns a JWT token (Not user directly)
     """
     try:
         # Check if email already exists
@@ -218,7 +284,24 @@ async def signup_user(user_data: UserSignUpRequest, db: Session = Depends(get_db
         db.commit()
         db.refresh(new_user)
 
-        return new_user
+        # ============================================
+        # 🔒 NEW: Create JWT token with only user ID
+        # WHY: Token contains minimal data (just user_id) for security
+        # Frontend uses this token to fetch user data when needed
+        # ============================================
+        access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        access_token = create_access_token(
+            data={
+                'sub': str(new_user.id)
+            }, # 'sub' is standard JWT claim for user identifier  
+            ## sub should be an str not an int
+            expires_delta=access_token_expires
+        )
+
+        return {
+            'access_token': access_token,
+            'token_type': 'bearer' 
+        }
 
     except HTTPException:
         raise
@@ -229,19 +312,19 @@ async def signup_user(user_data: UserSignUpRequest, db: Session = Depends(get_db
             detail=f'Error during signup: {str(exc)}'
         )
 
-@app.post('/login')
-async def login_user(login_data: UserLoginRequest, db: Session = Depends(get_db)):
+@app.post('/login', response_model=Token)
+async def login_user(
+    login_data: UserLoginRequest, 
+    db: Session = Depends(get_db)
+):
     """
-    Login user and determine redirect based on profile completion.
-    
-    Flow:
-    1. Verify credentials
-    2. Check if user has completed settings
-    3. Check if user has completed news preferences
-    4. Return redirect URL based on completion status
+    Login user and return JWT token.
+    Frontend will use this token to:
+    1. Call /users/me to get user data
+    2. Call /users/me/redirect to determine where to redirect
     """
     try:
-        # Find user by email
+        # Step1: Find user by email
         user = db.query(UserDetail).filter(
             UserDetail.email == login_data.email
         ).first()
@@ -252,40 +335,23 @@ async def login_user(login_data: UserLoginRequest, db: Session = Depends(get_db)
                 detail='Invalid email or password'
             )
 
-        # Verify password
+        # Step2: Verify password
         if not verify_password(login_data.password, user.password):
             raise HTTPException(
                 status_code=401,
                 detail='Invalid email or password'
             )
 
-        # Check profile completion status
-        user_settings = db.query(UserSetting).filter(
-            UserSetting.user_id == user.id
-        ).first()
+        # Step3: create JWT token with user_id
+        access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        access_token = create_access_token(
+            data={'sub': str(user.id)},  ## userId as str and not int
+            expires_delta=access_token_expires
+        )
 
-        news_preferences = db.query(NewsTopicAndScheduleTime).filter(
-            NewsTopicAndScheduleTime.user_id == user.id
-        ).first()
-
-        # Determine redirect URL
-        if not user_settings:
-            redirect_url = 'user-settings.html'
-        elif not news_preferences:
-            redirect_url = 'topic-and-schedule.html'
-        else:
-            redirect_url = 'news-summary.html'
-
-        return {
-            "message": "Login successful",
-            "redirect_url": redirect_url,
-            "user": {
-                "id": user.id,
-                "firstName": user.firstName,
-                "lastName": user.lastName,
-                "fullName": user.fullName,
-                "email": user.email
-            }
+        return{
+            'access_token': access_token,
+            'token_type': 'bearer'
         }
 
     except HTTPException:
@@ -297,59 +363,79 @@ async def login_user(login_data: UserLoginRequest, db: Session = Depends(get_db)
             detail=f'Error during login: {str(exc)}'
         )
 
+@app.get('/user/redirect')
+async def get_redirect_url(
+    current_user: UserDetail = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Determine where to redirect user based on profile completion (PROTECTED ROUTE)
+    - Checks if user has completed settings
+    - Checks if user has completed news preferences
+    - Returns appropriate redirect URL
+    """
+    try:
+        user_settings = db.query(UserSetting).filter(
+            UserSetting.user_id==current_user.id
+        ).first()
+
+        news_preferences = db.query(NewsTopicAndScheduleTime).filter(
+            NewsTopicAndScheduleTime.user_id==current_user.id
+        ).first()
+
+        if not user_settings:
+            redirect_url = 'user-settings.html'
+        elif not news_preferences:
+            redirect_url = 'topic-and-schedule.html'
+        else:
+            redirect_url = 'news-summary.html'
+
+        return {
+            'redirect_url': redirect_url
+        }
+
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f'Error fetching redirect url: {exc}'
+        )
+
 # ============================================
 # USER SETTINGS ENDPOINTS (Page 2)
 # ============================================
 
-@app.post('/settings/{user_id}', response_model=UserSettingResponse)
+@app.post('/user/setting')
 async def create_user_settings(
-    user_id: int,
     settings_data: UserSettingRequest,
+    current_user: UserDetail = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
     """
+    Verifies user based on token
     Create user settings (country, city, API keys).
     Called when user completes the settings page.
     """
     try:
-        # Verify user exists
-        user = db.query(UserDetail).filter(UserDetail.id == user_id).first()
-        if not user:
+        #Step1: Verify user exists
+        if not current_user:
             raise HTTPException(status_code=404, detail='User not found')
 
-        # Check if settings already exist
-        existing_settings = db.query(UserSetting).filter(
-            UserSetting.user_id == user_id
-        ).first()
-
-        if existing_settings:
-            raise HTTPException(
-                status_code=400,
-                detail='Settings already exist. Use PUT /settings/{user_id} to update.'
-            )
-
-        # Validate required fields
-        if not settings_data.country or not settings_data.city:
-            raise HTTPException(
-                status_code=400,
-                detail='Country and city are required'
-            )
-
-        # Create new settings
-        new_settings = UserSetting(
-            user_id=user_id,
+        #Step2: Create new user setting record
+        new_settings_data = UserSetting(
+            user_id=current_user.id,
             country=settings_data.country,
             city=settings_data.city,
             newsApi=settings_data.newsApi,
             weatherApi=settings_data.weatherApi
         )
 
-        db.add(new_settings)
+        db.add(new_settings_data)
         db.commit()
-        db.refresh(new_settings)
-
-        return new_settings
-
+        db.refresh(new_settings_data)
+        
+        return{
+            'success_message': 'User Setting saved successfully'
+        }
     except HTTPException:
         raise
     except Exception as exc:
@@ -359,19 +445,21 @@ async def create_user_settings(
             detail=f'Error creating settings: {str(exc)}'
         )
 
-@app.put('/settings/{user_id}', response_model=UserSettingResponse)
+@app.put('/user/setting')
 async def update_user_settings(
-    user_id: int,
     settings_data: UserSettingRequest,
+    current_user: UserDetail = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
     """
+    Get current user
     Update user settings (partial update supported).
     Only updates fields that are provided in the request.
     """
     try:
+        #Step1: Get current user
         settings = db.query(UserSetting).filter(
-            UserSetting.user_id == user_id
+            UserSetting.user_id == current_user.id
         ).first()
 
         if not settings:
@@ -380,7 +468,7 @@ async def update_user_settings(
                 detail='Settings not found. Use POST /settings/{user_id} to create.'
             )
 
-        # Update only provided fields
+        #Step2: Update only provided fields
         update_data = settings_data.model_dump(exclude_unset=True)
         
         for field, value in update_data.items():
@@ -403,43 +491,30 @@ async def update_user_settings(
 # NEWS PREFERENCES ENDPOINTS (Page 3)
 # ============================================
 
-@app.post('/news-preferences/{user_id}', response_model=NewsTopicScheduleResponse)
+@app.post('/news/preferences')
 async def create_news_preferences(
-    user_id: int,
     preference_data: NewsTopicScheduleRequest,
+    current_user: UserDetail = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
     """
+    Verify existing user
     Create news preferences (topic and schedule).
     Called when user completes the news preferences page.
     """
     try:
-        # Verify user exists
-        user = db.query(UserDetail).filter(UserDetail.id == user_id).first()
-        if not user:
+        #Step1: Verify user exists
+        if not current_user:
             raise HTTPException(status_code=404, detail='User not found')
 
-        # Validate required fields
-        if not preference_data.newsTopic:
-            raise HTTPException(
-                status_code=400,
-                detail='News topic is required'
-            )
-        
-        if not preference_data.deliveryTime:
-            raise HTTPException(
-                status_code=400,
-                detail='Delivery time is required'
-            )
-
-        # Create new preferences
+        #Step2: Create new preferences
         new_preferences = NewsTopicAndScheduleTime(
-            user_id=user_id,
+            user_id=current_user.id,
             newsTopic=preference_data.newsTopic,
-            isCustomTopic=preference_data.isCustomTopic or False,
+            isCustomTopic=preference_data.isCustomTopic,
             deliveryTime=preference_data.deliveryTime,
-            isImmediate=preference_data.isImmediate or False,
-            isScheduled=preference_data.isScheduled or False
+            isImmediate=preference_data.isImmediate,
+            isScheduled=preference_data.isScheduled
         )
 
         db.add(new_preferences)
@@ -457,15 +532,18 @@ async def create_news_preferences(
             detail=f'Error creating news preferences: {str(exc)}'
         )
 
-@app.get('/news-preferences/{user_id}')
-async def get_news_preferences(user_id: int, db: Session = Depends(get_db)):
+@app.get('/news/preferences')
+async def get_news_preferences(
+    current_user: UserDetail = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
     """
     Get all news preferences for a user.
     Returns a list since a user can have multiple preferences.
     """
     try:
         preferences = db.query(NewsTopicAndScheduleTime).filter(
-            NewsTopicAndScheduleTime.user_id == user_id
+            NewsTopicAndScheduleTime.user_id == current_user.id
         ).all()
 
         if not preferences:
@@ -475,7 +553,7 @@ async def get_news_preferences(user_id: int, db: Session = Depends(get_db)):
             }
 
         return {
-            "user_id": user_id,
+            "user_id": current_user.id,
             "preferences": [
                 {
                     "id": pref.news_id,  # Fixed: use news_id instead of id
@@ -495,25 +573,33 @@ async def get_news_preferences(user_id: int, db: Session = Depends(get_db)):
             detail=f'Error fetching preferences: {str(exc)}'
         )
 
-@app.put('/news-preferences/{preference_id}', response_model=NewsTopicScheduleResponse)
+@app.put('/news/preferences/{preference_id}')
 async def update_news_preferences(
     preference_id: int,
     preference_data: NewsTopicScheduleRequest,
+    current_user: UserDetail = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
     """
     Update specific news preference by its ID.
     Supports partial updates.
+    **Requires JWT authentication**
     """
     try:
         preference = db.query(NewsTopicAndScheduleTime).filter(
-            NewsTopicAndScheduleTime.news_id == preference_id  # Fixed: use news_id instead of id
+            NewsTopicAndScheduleTime.news_id == preference_id  
         ).first()
 
         if not preference:
             raise HTTPException(
                 status_code=404,
                 detail='Preference not found'
+            )
+        
+        if preference.user_id != current_user.id:
+            raise HTTPException(
+                status_code=403,
+                detail='You do not have permission to update this preference'
             )
 
         # Update only provided fields
@@ -525,8 +611,6 @@ async def update_news_preferences(
         db.commit()
         db.refresh(preference)
 
-        return preference
-
     except HTTPException:
         raise
     except Exception as exc:
@@ -536,19 +620,29 @@ async def update_news_preferences(
             detail=f'Error updating preference: {str(exc)}'
         )
 
-@app.delete('/news-preferences/{preference_id}')
-async def delete_news_preference(preference_id: int, db: Session = Depends(get_db)):
+@app.delete('/news/preferences/{preference_id}')
+async def delete_news_preference(
+    preference_id: int,
+    current_user: UserDetail = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
     """Delete a specific news preference"""
     try:
         preference = db.query(NewsTopicAndScheduleTime).filter(
-            NewsTopicAndScheduleTime.news_id == preference_id  # Fixed: use news_id instead of id
+            NewsTopicAndScheduleTime.news_id == preference_id
         ).first()
 
         if not preference:
             raise HTTPException(status_code=404, detail='Preference not found')
 
+        if preference.user_id != current_user.id:
+            raise HTTPException(
+                status_code=403,
+                detail='You do not have permission to delete this preference'
+            )
+
         deleted_info = {
-            "id": preference.news_id,  # Fixed: use news_id instead of id
+            "id": preference.news_id,
             "user_id": preference.user_id,
             "newsTopic": preference.newsTopic,
             "deliveryTime": preference.deliveryTime

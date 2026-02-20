@@ -831,3 +831,1021 @@ AttributeError: 'HTMLEmail' object has no attribute 'send_email'
 2026-02-15 21:25:56,133 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-15 21:26:56 IST)" executed successfully
 2026-02-15 21:26:42,784 - apscheduler.scheduler - INFO - Scheduler has been shut down
 2026-02-15 21:26:42,785 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-19 17:44:10,419 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-19 17:44:10,558 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-19 17:44:10,558 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-19 17:44:10,558 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-19 17:44:10,558 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-19 17:44:10,558 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-19 17:44:10,558 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-19 17:44:10,558 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-19 17:44:30,735 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\env\infoSystemDigest\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-02-19 17:45:10,451 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:45:10 IST)" (scheduled at 2026-02-19 17:45:10.419810+05:30)
+2026-02-19 17:45:10,451 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-19 17:45:10,451 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:46:10 IST)" executed successfully
+2026-02-19 17:46:10,425 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:47:10 IST)" (scheduled at 2026-02-19 17:46:10.419810+05:30)
+2026-02-19 17:46:10,425 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-19 17:46:10,425 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:47:10 IST)" executed successfully
+2026-02-19 17:46:11,536 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-19 17:46:11,552 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-19 17:46:14,139 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-19 17:46:14,160 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-19 17:46:14,160 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-19 17:46:14,160 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-19 17:46:14,160 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-19 17:46:14,160 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-19 17:46:14,160 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-19 17:46:14,160 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-19 17:46:27,775 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\env\infoSystemDigest\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-02-19 17:47:14,161 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:47:14 IST)" (scheduled at 2026-02-19 17:47:14.139337+05:30)
+2026-02-19 17:47:14,167 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-19 17:47:14,171 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:48:14 IST)" executed successfully
+2026-02-19 17:48:14,143 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:49:14 IST)" (scheduled at 2026-02-19 17:48:14.139337+05:30)
+2026-02-19 17:48:14,147 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-19 17:48:14,148 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:49:14 IST)" executed successfully
+2026-02-19 17:49:14,144 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:50:14 IST)" (scheduled at 2026-02-19 17:49:14.139337+05:30)
+2026-02-19 17:49:14,144 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-19 17:49:14,144 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:50:14 IST)" executed successfully
+2026-02-19 17:50:14,140 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:51:14 IST)" (scheduled at 2026-02-19 17:50:14.139337+05:30)
+2026-02-19 17:50:14,140 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-19 17:50:14,140 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:51:14 IST)" executed successfully
+2026-02-19 17:51:14,141 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:52:14 IST)" (scheduled at 2026-02-19 17:51:14.139337+05:30)
+2026-02-19 17:51:14,144 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-19 17:51:14,145 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:52:14 IST)" executed successfully
+2026-02-19 17:52:14,153 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:53:14 IST)" (scheduled at 2026-02-19 17:52:14.139337+05:30)
+2026-02-19 17:52:14,157 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-19 17:52:14,158 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-19 17:53:14 IST)" executed successfully
+2026-02-19 17:53:06,613 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-19 17:53:06,613 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-19 17:53:59,635 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:53:59,635 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:53:59,635 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:53:59,635 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:53:59,635 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:53:59,636 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:53:59,636 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-19 17:53:59,636 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-19 17:53:59,637 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-19 17:53:59,637 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-19 17:53:59,637 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-19 17:53:59,637 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-19 17:53:59,638 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-19 17:53:59,638 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-19 17:53:59,638 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-19 17:53:59,645 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-19 17:53:59,645 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-19 17:53:59,649 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-19 17:53:59,649 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-19 17:53:59,649 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-19 17:53:59,649 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-19 17:53:59,649 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-19 17:54:17,309 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\env\infoSystemDigest\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-02-19 17:54:34,322 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-19 17:54:34,322 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-20 19:13:01,842 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:13:01,842 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:13:01,842 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:13:01,842 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:13:01,842 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:13:01,842 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:13:01,855 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:13:01,855 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-20 19:13:01,855 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-20 19:13:01,858 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-20 19:13:01,858 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-20 19:13:01,858 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-20 19:13:01,858 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-20 19:13:01,858 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-20 19:13:01,858 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-20 19:13:02,029 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-20 19:13:02,029 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-20 19:13:02,029 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-20 19:13:02,033 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-20 19:13:02,033 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-20 19:13:02,033 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-20 19:13:02,033 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-20 19:13:15,627 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\env\infoSystemDigest\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-02-20 19:14:01,870 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:14:01 IST)" (scheduled at 2026-02-20 19:14:01.855468+05:30)
+2026-02-20 19:14:01,931 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:14:01,931 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:15:01 IST)" executed successfully
+2026-02-20 19:15:01,866 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:16:01 IST)" (scheduled at 2026-02-20 19:15:01.855468+05:30)
+2026-02-20 19:15:01,888 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:15:01,892 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:16:01 IST)" executed successfully
+2026-02-20 19:16:01,858 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:17:01 IST)" (scheduled at 2026-02-20 19:16:01.855468+05:30)
+2026-02-20 19:16:01,862 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:16:01,862 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:17:01 IST)" executed successfully
+2026-02-20 19:17:01,892 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:18:01 IST)" (scheduled at 2026-02-20 19:17:01.855468+05:30)
+2026-02-20 19:17:01,900 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:17:01,903 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:18:01 IST)" executed successfully
+2026-02-20 19:18:01,860 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:19:01 IST)" (scheduled at 2026-02-20 19:18:01.855468+05:30)
+2026-02-20 19:18:01,861 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:18:01,861 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:19:01 IST)" executed successfully
+2026-02-20 19:19:01,866 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:20:01 IST)" (scheduled at 2026-02-20 19:19:01.855468+05:30)
+2026-02-20 19:19:01,866 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:19:01,866 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:20:01 IST)" executed successfully
+2026-02-20 19:20:01,863 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:21:01 IST)" (scheduled at 2026-02-20 19:20:01.855468+05:30)
+2026-02-20 19:20:01,864 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:20:01,864 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:21:01 IST)" executed successfully
+2026-02-20 19:21:01,872 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:22:01 IST)" (scheduled at 2026-02-20 19:21:01.855468+05:30)
+2026-02-20 19:21:01,875 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:21:01,875 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:22:01 IST)" executed successfully
+2026-02-20 19:22:01,864 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:23:01 IST)" (scheduled at 2026-02-20 19:22:01.855468+05:30)
+2026-02-20 19:22:01,868 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:22:01,868 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:23:01 IST)" executed successfully
+2026-02-20 19:23:01,865 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:24:01 IST)" (scheduled at 2026-02-20 19:23:01.855468+05:30)
+2026-02-20 19:23:01,869 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:23:01,869 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:24:01 IST)" executed successfully
+2026-02-20 19:24:01,871 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:25:01 IST)" (scheduled at 2026-02-20 19:24:01.855468+05:30)
+2026-02-20 19:24:01,893 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:24:01,893 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:25:01 IST)" executed successfully
+2026-02-20 19:25:01,865 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:26:01 IST)" (scheduled at 2026-02-20 19:25:01.855468+05:30)
+2026-02-20 19:25:01,865 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:25:01,865 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:26:01 IST)" executed successfully
+2026-02-20 19:26:01,862 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:27:01 IST)" (scheduled at 2026-02-20 19:26:01.855468+05:30)
+2026-02-20 19:26:01,862 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:26:01,862 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:27:01 IST)" executed successfully
+2026-02-20 19:27:01,862 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:28:01 IST)" (scheduled at 2026-02-20 19:27:01.855468+05:30)
+2026-02-20 19:27:01,872 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:27:01,878 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:28:01 IST)" executed successfully
+2026-02-20 19:28:01,869 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:29:01 IST)" (scheduled at 2026-02-20 19:28:01.855468+05:30)
+2026-02-20 19:28:01,876 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:28:01,876 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:29:01 IST)" executed successfully
+2026-02-20 19:29:01,857 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:30:01 IST)" (scheduled at 2026-02-20 19:29:01.855468+05:30)
+2026-02-20 19:29:01,860 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:29:01,860 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:30:01 IST)" executed successfully
+2026-02-20 19:30:11,981 - apscheduler.executors.default - WARNING - Run time of job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:31:01 IST)" was missed by 0:00:10.126395
+2026-02-20 19:31:01,866 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:32:01 IST)" (scheduled at 2026-02-20 19:31:01.855468+05:30)
+2026-02-20 19:31:01,867 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:31:01,872 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:32:01 IST)" executed successfully
+2026-02-20 19:32:01,860 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:33:01 IST)" (scheduled at 2026-02-20 19:32:01.855468+05:30)
+2026-02-20 19:32:01,866 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:32:01,866 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:33:01 IST)" executed successfully
+2026-02-20 19:33:01,864 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:34:01 IST)" (scheduled at 2026-02-20 19:33:01.855468+05:30)
+2026-02-20 19:33:01,864 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:33:01,869 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:34:01 IST)" executed successfully
+2026-02-20 19:34:01,864 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:35:01 IST)" (scheduled at 2026-02-20 19:34:01.855468+05:30)
+2026-02-20 19:34:01,867 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:34:01,867 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:35:01 IST)" executed successfully
+2026-02-20 19:35:01,872 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:36:01 IST)" (scheduled at 2026-02-20 19:35:01.855468+05:30)
+2026-02-20 19:35:01,880 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:35:01,885 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:36:01 IST)" executed successfully
+2026-02-20 19:37:17,962 - apscheduler.executors.default - WARNING - Run time of job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:38:01 IST)" was missed by 0:00:16.106862
+2026-02-20 19:38:01,857 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:39:01 IST)" (scheduled at 2026-02-20 19:38:01.855468+05:30)
+2026-02-20 19:38:01,874 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:38:01,878 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:39:01 IST)" executed successfully
+2026-02-20 19:39:01,864 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:40:01 IST)" (scheduled at 2026-02-20 19:39:01.855468+05:30)
+2026-02-20 19:39:01,869 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:39:01,869 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:40:01 IST)" executed successfully
+2026-02-20 19:39:52,690 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-20 19:39:52,693 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-20 19:42:19,811 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:42:19,811 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:42:19,811 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:42:19,811 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:42:19,811 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:42:19,811 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:42:19,811 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 19:42:19,818 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-20 19:42:19,818 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-20 19:42:19,818 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-20 19:42:19,818 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-20 19:42:19,818 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-20 19:42:19,818 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-20 19:42:19,820 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-20 19:42:19,820 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-20 19:42:19,855 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-20 19:42:19,858 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-20 19:42:19,859 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-20 19:42:19,860 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-20 19:42:19,860 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-20 19:42:19,860 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-20 19:42:19,860 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-20 19:43:19,822 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:43:19 IST)" (scheduled at 2026-02-20 19:43:19.811443+05:30)
+2026-02-20 19:43:19,916 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:43:19,918 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:44:19 IST)" executed successfully
+2026-02-20 19:44:06,643 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\env\infoSystemDigest\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-02-20 19:44:19,814 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:45:19 IST)" (scheduled at 2026-02-20 19:44:19.811443+05:30)
+2026-02-20 19:44:19,818 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:44:19,821 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:45:19 IST)" executed successfully
+2026-02-20 19:45:19,826 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:46:19 IST)" (scheduled at 2026-02-20 19:45:19.811443+05:30)
+2026-02-20 19:45:19,826 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:45:19,826 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:46:19 IST)" executed successfully
+2026-02-20 19:46:19,820 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:47:19 IST)" (scheduled at 2026-02-20 19:46:19.811443+05:30)
+2026-02-20 19:46:19,824 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:46:19,826 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:47:19 IST)" executed successfully
+2026-02-20 19:47:19,819 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:48:19 IST)" (scheduled at 2026-02-20 19:47:19.811443+05:30)
+2026-02-20 19:47:19,823 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:47:19,823 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:48:19 IST)" executed successfully
+2026-02-20 19:48:19,815 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:49:19 IST)" (scheduled at 2026-02-20 19:48:19.811443+05:30)
+2026-02-20 19:48:19,822 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:48:19,824 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:49:19 IST)" executed successfully
+2026-02-20 19:49:19,816 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:50:19 IST)" (scheduled at 2026-02-20 19:49:19.811443+05:30)
+2026-02-20 19:49:19,818 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:49:19,820 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:50:19 IST)" executed successfully
+2026-02-20 19:50:19,821 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:51:19 IST)" (scheduled at 2026-02-20 19:50:19.811443+05:30)
+2026-02-20 19:50:19,826 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:50:19,829 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:51:19 IST)" executed successfully
+2026-02-20 19:51:19,825 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:52:19 IST)" (scheduled at 2026-02-20 19:51:19.811443+05:30)
+2026-02-20 19:51:19,826 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:51:19,826 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:52:19 IST)" executed successfully
+2026-02-20 19:52:19,819 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:53:19 IST)" (scheduled at 2026-02-20 19:52:19.811443+05:30)
+2026-02-20 19:52:19,824 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:52:19,826 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:53:19 IST)" executed successfully
+2026-02-20 19:53:19,824 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:54:19 IST)" (scheduled at 2026-02-20 19:53:19.811443+05:30)
+2026-02-20 19:53:19,830 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:53:19,830 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:54:19 IST)" executed successfully
+2026-02-20 19:54:19,818 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:55:19 IST)" (scheduled at 2026-02-20 19:54:19.811443+05:30)
+2026-02-20 19:54:19,822 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:54:19,822 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:55:19 IST)" executed successfully
+2026-02-20 19:55:19,820 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:56:19 IST)" (scheduled at 2026-02-20 19:55:19.811443+05:30)
+2026-02-20 19:55:19,821 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:55:19,827 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:56:19 IST)" executed successfully
+2026-02-20 19:56:19,827 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:57:19 IST)" (scheduled at 2026-02-20 19:56:19.811443+05:30)
+2026-02-20 19:56:19,832 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:56:19,832 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:57:19 IST)" executed successfully
+2026-02-20 19:57:19,818 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:58:19 IST)" (scheduled at 2026-02-20 19:57:19.811443+05:30)
+2026-02-20 19:57:19,819 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:57:19,819 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:58:19 IST)" executed successfully
+2026-02-20 19:58:19,821 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:59:19 IST)" (scheduled at 2026-02-20 19:58:19.811443+05:30)
+2026-02-20 19:58:19,822 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:58:19,822 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 19:59:19 IST)" executed successfully
+2026-02-20 19:59:19,816 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:00:19 IST)" (scheduled at 2026-02-20 19:59:19.811443+05:30)
+2026-02-20 19:59:19,816 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 19:59:19,816 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:00:19 IST)" executed successfully
+2026-02-20 20:00:19,822 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:01:19 IST)" (scheduled at 2026-02-20 20:00:19.811443+05:30)
+2026-02-20 20:00:19,822 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 20:00:19,829 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:01:19 IST)" executed successfully
+2026-02-20 20:01:19,814 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:02:19 IST)" (scheduled at 2026-02-20 20:01:19.811443+05:30)
+2026-02-20 20:01:19,815 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 20:01:19,820 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:02:19 IST)" executed successfully
+2026-02-20 20:02:19,813 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:03:19 IST)" (scheduled at 2026-02-20 20:02:19.811443+05:30)
+2026-02-20 20:02:19,813 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 20:02:19,813 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:03:19 IST)" executed successfully
+2026-02-20 20:03:19,825 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:04:19 IST)" (scheduled at 2026-02-20 20:03:19.811443+05:30)
+2026-02-20 20:03:19,831 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 20:03:19,833 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:04:19 IST)" executed successfully
+2026-02-20 20:03:26,910 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-20 20:03:26,910 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-20 20:03:31,553 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-20 20:03:31,598 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-20 20:03:31,598 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-20 20:03:31,600 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-20 20:03:31,600 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-20 20:03:31,600 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-20 20:03:31,601 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-20 20:03:31,602 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-20 20:04:13,692 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-20 20:04:13,692 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-20 20:04:40,069 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:04:40,070 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:04:40,070 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:04:40,070 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:04:40,071 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:04:40,071 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:04:40,071 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:04:40,072 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-20 20:04:40,072 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-20 20:04:40,073 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-20 20:04:40,084 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-20 20:04:40,099 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-20 20:04:40,100 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-20 20:04:40,100 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-20 20:04:40,100 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-20 20:04:40,125 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-20 20:04:40,125 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-20 20:04:40,125 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-20 20:04:40,125 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-20 20:04:40,125 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-20 20:04:40,125 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-20 20:04:40,125 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-20 20:05:10,653 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\env\infoSystemDigest\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-02-20 20:05:40,079 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:05:40 IST)" (scheduled at 2026-02-20 20:05:40.071994+05:30)
+2026-02-20 20:05:40,086 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-20 20:05:40,086 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: science
+2026-02-20 20:05:40,095 - infoStreamDigest - INFO - Fetching news for topic: science
+2026-02-20 20:05:41,289 - news.utils - WARNING - Failed to scrape https://scitechdaily.com/after-decades-of-global-searching-scientists-finally-create-the-silicon-aromatic-once-thought-impossible/: Article `download()` failed with 403 Client Error: Forbidden for url: https://scitechdaily.com/after-decades-of-global-searching-scientists-finally-create-the-silicon-aromatic-once-thought-impossible/ on URL https://scitechdaily.com/after-decades-of-global-searching-scientists-finally-create-the-silicon-aromatic-once-thought-impossible/
+2026-02-20 20:05:45,336 - news.utils - WARNING - Failed to scrape https://gizmodo.com/a-new-moon-race-starts-this-year-and-this-time-its-all-about-the-water-2000723719: Article `download()` failed with 403 Client Error: Forbidden for url: https://gizmodo.com/a-new-moon-race-starts-this-year-and-this-time-its-all-about-the-water-2000723719 on URL https://gizmodo.com/a-new-moon-race-starts-this-year-and-this-time-its-all-about-the-water-2000723719
+2026-02-20 20:06:00,477 - news.utils - INFO - Fetched 10 articles for topic: science
+2026-02-20 20:06:00,482 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:06:00,586 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:06:06,489 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:06:06,489 - infoStreamDigest - INFO - Sending email to adityasalian865@gmail.com
+2026-02-20 20:06:09,627 - infoStreamDigest - INFO - Successfully sent email to adityasalian865@gmail.com
+2026-02-20 20:06:09,630 - infoStreamDigest - INFO - Successfully sent science email to adityasalian865@gmail.com
+2026-02-20 20:06:09,655 - infoStreamDigest - INFO - Reset isImmediate flag for 1 schedules
+2026-02-20 20:06:09,655 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'success', 'message': 'Processed 1 user(s): sent 1 email(s), 0 failed', 'total_users': 1, 'emails_sent': 1, 'emails_failed': 0, 'errors': []}
+2026-02-20 20:06:09,655 - scheduler - INFO - Immediate digest job with result: {'status': 'success', 'message': 'Processed 1 user(s): sent 1 email(s), 0 failed', 'total_users': 1, 'emails_sent': 1, 'emails_failed': 0, 'errors': []}
+2026-02-20 20:06:09,655 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:06:40 IST)" executed successfully
+2026-02-20 20:06:40,079 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:07:40 IST)" (scheduled at 2026-02-20 20:06:40.071994+05:30)
+2026-02-20 20:06:40,083 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 20:06:40,172 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:07:40 IST)" executed successfully
+2026-02-20 20:07:40,076 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:08:40 IST)" (scheduled at 2026-02-20 20:07:40.071994+05:30)
+2026-02-20 20:07:40,082 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 20:07:40,084 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:08:40 IST)" executed successfully
+2026-02-20 20:08:40,080 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:09:40 IST)" (scheduled at 2026-02-20 20:08:40.071994+05:30)
+2026-02-20 20:08:40,080 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 20:08:40,080 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:09:40 IST)" executed successfully
+2026-02-20 20:08:46,384 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-20 20:08:46,387 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-20 20:31:53,039 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-20 20:31:53,064 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-20 20:31:53,065 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-20 20:31:53,065 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-20 20:31:53,067 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-20 20:31:53,093 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-20 20:31:53,093 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-20 20:31:53,093 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-20 20:31:53,093 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-20 20:31:53,095 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-20 20:31:53,095 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-20 20:31:53,097 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-20 20:32:24,519 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-20 20:32:24,519 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-20 20:32:52,827 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:32:52,827 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:32:52,827 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:32:52,827 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:32:52,827 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:32:52,827 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:32:52,827 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:32:52,827 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-20 20:32:52,827 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-20 20:32:52,850 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-20 20:32:52,857 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-20 20:32:52,857 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-20 20:32:52,861 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-20 20:32:52,862 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-20 20:32:52,862 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-20 20:32:52,887 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-20 20:32:52,891 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-20 20:32:52,892 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-20 20:32:52,892 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-20 20:32:52,892 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-20 20:32:52,892 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-20 20:32:52,892 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-20 20:33:06,293 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\env\infoSystemDigest\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-02-20 20:33:52,840 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:33:52 IST)" (scheduled at 2026-02-20 20:33:52.827073+05:30)
+2026-02-20 20:33:52,925 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian865@gmail.com
+2026-02-20 20:33:52,928 - infoStreamDigest - INFO - Sending immediate email to adityasalian865@gmail.com for topic: health
+2026-02-20 20:33:52,928 - infoStreamDigest - INFO - Fetching news for topic: health
+2026-02-20 20:34:05,765 - news.utils - WARNING - Failed to scrape https://pawnation.com/news/woman-cutest-way-teaching-golden-retriever-not-to-chase-chickens: Article `download()` failed with 403 Client Error: Forbidden for url: https://pawnation.com/news/woman-cutest-way-teaching-golden-retriever-not-to-chase-chickens on URL https://pawnation.com/news/woman-cutest-way-teaching-golden-retriever-not-to-chase-chickens
+2026-02-20 20:34:10,828 - news.utils - INFO - Fetched 10 articles for topic: health
+2026-02-20 20:34:10,828 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:34:10,889 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:34:11,954 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:34:11,954 - infoStreamDigest - INFO - Sending email to adityasalian865@gmail.com
+2026-02-20 20:34:12,895 - infoStreamDigest - INFO - Successfully sent email to adityasalian865@gmail.com
+2026-02-20 20:34:12,895 - infoStreamDigest - INFO - Successfully sent health email to adityasalian865@gmail.com
+2026-02-20 20:34:12,907 - infoStreamDigest - INFO - Reset isImmediate flag for 1 schedules
+2026-02-20 20:34:12,913 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'success', 'message': 'Processed 1 user(s): sent 1 email(s), 0 failed', 'total_users': 1, 'emails_sent': 1, 'emails_failed': 0, 'errors': []}
+2026-02-20 20:34:12,913 - scheduler - INFO - Immediate digest job with result: {'status': 'success', 'message': 'Processed 1 user(s): sent 1 email(s), 0 failed', 'total_users': 1, 'emails_sent': 1, 'emails_failed': 0, 'errors': []}
+2026-02-20 20:34:12,913 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:34:52 IST)" executed successfully
+2026-02-20 20:34:52,833 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:35:52 IST)" (scheduled at 2026-02-20 20:34:52.827073+05:30)
+2026-02-20 20:34:52,839 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 20:34:52,841 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:35:52 IST)" executed successfully
+2026-02-20 20:35:52,835 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:36:52 IST)" (scheduled at 2026-02-20 20:35:52.827073+05:30)
+2026-02-20 20:35:52,841 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 20:35:52,866 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:36:52 IST)" executed successfully
+2026-02-20 20:36:52,829 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:37:52 IST)" (scheduled at 2026-02-20 20:36:52.827073+05:30)
+2026-02-20 20:36:52,836 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'User not found or not configured for immediate emails', 'emails_sent': 0, 'emails_failed': 0}
+2026-02-20 20:36:52,858 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:37:52 IST)" executed successfully
+2026-02-20 20:37:52,839 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:38:52 IST)" (scheduled at 2026-02-20 20:37:52.827073+05:30)
+2026-02-20 20:37:52,842 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:37:52,845 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:37:52,845 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:38:02,492 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:38:02,492 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:38:02,531 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:38:03,167 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:38:03,167 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:38:03,888 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:38:03,896 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:38:03,896 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:38:03,896 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:38:03,896 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:38:03,898 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:38:52 IST)" executed successfully
+2026-02-20 20:38:52,833 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:39:52 IST)" (scheduled at 2026-02-20 20:38:52.827073+05:30)
+2026-02-20 20:38:52,839 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:38:52,839 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:38:52,839 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:38:57,292 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:38:57,292 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:38:57,323 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:38:57,931 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:38:57,932 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:38:58,475 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:38:58,475 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:38:58,475 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:38:58,475 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:38:58,475 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:38:58,475 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:39:52 IST)" executed successfully
+2026-02-20 20:39:52,855 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:40:52 IST)" (scheduled at 2026-02-20 20:39:52.827073+05:30)
+2026-02-20 20:39:52,878 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:39:52,880 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:39:52,881 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:39:59,133 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:39:59,135 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:39:59,181 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:39:59,875 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:39:59,877 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:40:00,646 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:40:00,655 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:40:00,655 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:40:00,655 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:40:00,655 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:40:00,659 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:40:52 IST)" executed successfully
+2026-02-20 20:40:52,848 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:41:52 IST)" (scheduled at 2026-02-20 20:40:52.827073+05:30)
+2026-02-20 20:40:52,853 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:40:52,854 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:40:52,855 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:40:58,434 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:40:58,436 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:40:58,495 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:40:59,198 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:40:59,200 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:40:59,959 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:40:59,965 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:40:59,969 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:40:59,970 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:40:59,973 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:40:59,974 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:41:52 IST)" executed successfully
+2026-02-20 20:41:52,842 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:42:52 IST)" (scheduled at 2026-02-20 20:41:52.827073+05:30)
+2026-02-20 20:41:52,846 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:41:52,848 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:41:52,848 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:41:59,470 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:41:59,473 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:41:59,506 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:42:00,249 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:42:00,249 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:42:00,847 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:42:00,847 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:42:00,847 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:42:00,855 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:42:00,855 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:42:00,859 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:42:52 IST)" executed successfully
+2026-02-20 20:42:52,845 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:43:52 IST)" (scheduled at 2026-02-20 20:42:52.827073+05:30)
+2026-02-20 20:42:52,849 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:42:52,860 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:42:52,861 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:42:59,398 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:42:59,405 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:42:59,449 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:43:00,460 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:43:00,476 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:43:01,132 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:43:01,134 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:43:01,134 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:43:01,136 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:43:01,136 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:43:01,138 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:43:52 IST)" executed successfully
+2026-02-20 20:43:52,837 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:44:52 IST)" (scheduled at 2026-02-20 20:43:52.827073+05:30)
+2026-02-20 20:43:52,839 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:43:52,839 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:43:52,839 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:44:01,282 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:44:01,285 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:44:01,320 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:44:01,923 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:44:01,924 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:44:02,548 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:44:02,549 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:44:02,550 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:44:02,550 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:44:02,550 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:44:02,550 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:44:52 IST)" executed successfully
+2026-02-20 20:44:52,838 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:45:52 IST)" (scheduled at 2026-02-20 20:44:52.827073+05:30)
+2026-02-20 20:44:52,859 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:44:52,863 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:44:52,865 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:44:58,514 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:44:58,551 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:44:58,665 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:44:59,163 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:44:59,163 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:45:00,152 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:45:00,152 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:45:00,155 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:45:00,155 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:45:00,158 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:45:00,165 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:45:52 IST)" executed successfully
+2026-02-20 20:45:52,836 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:46:52 IST)" (scheduled at 2026-02-20 20:45:52.827073+05:30)
+2026-02-20 20:45:52,843 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:45:52,843 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:45:52,843 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:45:59,096 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:45:59,107 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:45:59,138 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:46:00,066 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:46:00,068 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:46:00,962 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:46:00,962 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:46:00,969 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:46:00,969 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:46:00,969 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:46:00,969 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:46:52 IST)" executed successfully
+2026-02-20 20:46:52,831 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:47:52 IST)" (scheduled at 2026-02-20 20:46:52.827073+05:30)
+2026-02-20 20:46:52,831 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:46:52,831 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:46:52,836 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:46:58,406 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:46:58,406 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:46:58,439 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:46:58,919 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:46:58,920 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:46:59,756 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:46:59,761 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:46:59,761 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:46:59,764 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:46:59,777 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:46:59,781 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:47:52 IST)" executed successfully
+2026-02-20 20:47:52,836 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:48:52 IST)" (scheduled at 2026-02-20 20:47:52.827073+05:30)
+2026-02-20 20:47:52,843 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:47:52,845 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:47:52,846 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:47:59,284 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:47:59,286 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:47:59,317 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:47:59,890 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:47:59,891 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:48:00,377 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:48:00,379 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:48:00,381 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:48:00,381 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:48:00,381 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:48:00,383 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:48:52 IST)" executed successfully
+2026-02-20 20:48:52,836 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:49:52 IST)" (scheduled at 2026-02-20 20:48:52.827073+05:30)
+2026-02-20 20:48:52,839 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:48:52,839 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:48:52,839 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:49:01,165 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:49:01,165 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:49:01,201 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:49:01,644 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:49:01,644 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:49:02,225 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:49:02,225 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:49:02,225 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:49:02,225 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:49:02,227 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:49:02,227 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:49:52 IST)" executed successfully
+2026-02-20 20:49:52,837 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:50:52 IST)" (scheduled at 2026-02-20 20:49:52.827073+05:30)
+2026-02-20 20:49:52,837 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:49:52,837 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:49:52,837 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:49:56,285 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:49:56,285 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:49:56,323 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:49:56,900 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:49:56,909 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:49:57,423 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:49:57,432 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:49:57,436 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:49:57,437 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:49:57,437 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:49:57,439 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:50:52 IST)" executed successfully
+2026-02-20 20:50:52,840 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:51:52 IST)" (scheduled at 2026-02-20 20:50:52.827073+05:30)
+2026-02-20 20:50:52,841 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:50:52,841 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:50:52,841 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:50:56,561 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:50:56,561 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:50:56,602 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:50:57,246 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:50:57,246 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:50:58,044 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:50:58,046 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:50:58,046 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:50:58,050 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:50:58,050 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:50:58,052 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:51:52 IST)" executed successfully
+2026-02-20 20:51:52,830 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:52:52 IST)" (scheduled at 2026-02-20 20:51:52.827073+05:30)
+2026-02-20 20:51:52,830 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:51:52,830 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:51:52,830 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:52:00,646 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:52:00,650 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:52:00,690 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:52:01,149 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:52:01,149 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:52:01,719 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:52:01,719 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:52:01,719 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:52:01,719 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:52:01,751 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:52:01,785 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:52:52 IST)" executed successfully
+2026-02-20 20:52:52,844 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:53:52 IST)" (scheduled at 2026-02-20 20:52:52.827073+05:30)
+2026-02-20 20:52:52,851 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:52:52,851 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:52:52,853 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:52:56,598 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:52:56,600 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:52:56,626 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:52:57,148 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:52:57,152 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:52:57,660 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:52:57,664 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:52:57,665 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:52:57,666 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:52:57,667 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:52:57,670 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:53:52 IST)" executed successfully
+2026-02-20 20:53:52,834 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:54:52 IST)" (scheduled at 2026-02-20 20:53:52.827073+05:30)
+2026-02-20 20:53:52,834 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:53:52,834 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:53:52,834 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:54:00,581 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:54:00,581 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:54:00,617 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:54:01,064 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:54:01,064 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:54:01,849 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:54:01,852 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:54:01,852 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:54:01,852 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:54:01,854 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:54:01,858 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:54:52 IST)" executed successfully
+2026-02-20 20:54:52,831 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:55:52 IST)" (scheduled at 2026-02-20 20:54:52.827073+05:30)
+2026-02-20 20:54:52,834 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:54:52,837 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:54:52,837 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:55:00,487 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:55:00,487 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:55:00,518 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:55:00,963 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:55:00,966 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:55:01,753 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:55:01,754 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:55:01,754 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:55:01,754 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:55:01,756 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:55:01,757 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:55:52 IST)" executed successfully
+2026-02-20 20:55:52,834 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:56:52 IST)" (scheduled at 2026-02-20 20:55:52.827073+05:30)
+2026-02-20 20:55:52,834 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:55:52,834 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:55:52,834 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:55:57,028 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:55:57,032 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:55:57,088 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:55:57,551 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:55:57,551 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:55:58,074 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:55:58,074 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:55:58,074 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:55:58,074 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:55:58,074 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:55:58,074 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:56:52 IST)" executed successfully
+2026-02-20 20:56:52,828 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:57:52 IST)" (scheduled at 2026-02-20 20:56:52.827073+05:30)
+2026-02-20 20:56:52,832 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:56:52,835 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:56:52,836 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:56:57,205 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:56:57,205 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:56:57,250 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:56:57,871 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:56:57,874 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:56:58,389 - html_email.html_email - ERROR - Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:56:58,389 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:56:58,389 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Failed to send email:
+You can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+2026-02-20 20:56:58,389 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:56:58,389 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Failed to send email:\nYou can only send testing emails to your own email address (adityasalian865@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.'}]}
+2026-02-20 20:56:58,389 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:57:52 IST)" executed successfully
+2026-02-20 20:57:38,016 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-20 20:57:38,016 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-20 20:57:52,247 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-20 20:57:52,268 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-20 20:57:52,269 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-20 20:57:52,269 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-20 20:57:52,273 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-20 20:57:52,305 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-20 20:57:52,305 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-20 20:57:52,309 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-20 20:57:52,309 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-20 20:57:52,309 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-20 20:57:52,309 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-20 20:57:52,309 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-20 20:58:52,265 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:58:52 IST)" (scheduled at 2026-02-20 20:58:52.247678+05:30)
+2026-02-20 20:58:52,282 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:58:52,314 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:58:52,316 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:58:57,198 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:58:57,198 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:58:57,240 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:58:58,093 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:58:58,093 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:58:58,093 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 20:58:58,093 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 20:58:58,093 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 20:58:58,093 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 20:58:58,096 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 20:59:52 IST)" executed successfully
+2026-02-20 20:59:52,264 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:00:52 IST)" (scheduled at 2026-02-20 20:59:52.247678+05:30)
+2026-02-20 20:59:52,280 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 20:59:52,281 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 20:59:52,283 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 20:59:57,981 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 20:59:57,982 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 20:59:58,022 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 20:59:58,544 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 20:59:58,544 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 20:59:58,544 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 20:59:58,544 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 20:59:58,544 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 20:59:58,544 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 20:59:58,544 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:00:52 IST)" executed successfully
+2026-02-20 21:00:00,016 - apscheduler.executors.default - INFO - Running job "9:00 PM Digest (trigger: cron[hour='21', minute='0'], next run at: 2026-02-21 21:00:00 IST)" (scheduled at 2026-02-20 21:00:00+05:30)
+2026-02-20 21:00:00,016 - scheduler - INFO - Starting digest job for 9:00 PM
+2026-02-20 21:00:00,018 - infoStreamDigest - INFO - Starting batch email job for time: 9:00 PM
+2026-02-20 21:00:00,023 - infoStreamDigest - INFO - No users found for target_time: 9:00 PM
+2026-02-20 21:00:00,023 - scheduler - INFO - Digest job for 9:00 PM: {'status': 'success', 'message': 'No users to notify', 'total_users': 0, 'emails_sent': 0, 'emails_failed': 0, 'errors': []}
+2026-02-20 21:00:00,028 - apscheduler.executors.default - INFO - Job "9:00 PM Digest (trigger: cron[hour='21', minute='0'], next run at: 2026-02-21 21:00:00 IST)" executed successfully
+2026-02-20 21:00:52,259 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:01:52 IST)" (scheduled at 2026-02-20 21:00:52.247678+05:30)
+2026-02-20 21:00:52,263 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 21:00:52,263 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 21:00:52,264 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 21:01:00,993 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 21:01:01,000 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 21:01:01,039 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 21:01:01,640 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 21:01:01,642 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 21:01:01,642 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 21:01:01,642 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 21:01:01,642 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 21:01:01,642 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 21:01:01,647 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:01:52 IST)" executed successfully
+2026-02-20 21:01:52,251 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:02:52 IST)" (scheduled at 2026-02-20 21:01:52.247678+05:30)
+2026-02-20 21:01:52,256 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 21:01:52,256 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 21:01:52,259 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 21:01:57,139 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 21:01:57,145 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 21:01:57,174 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 21:01:57,980 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 21:01:57,980 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 21:01:57,980 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 21:01:57,982 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 21:01:57,982 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 21:01:57,982 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 21:01:57,983 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:02:52 IST)" executed successfully
+2026-02-20 21:02:52,252 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:03:52 IST)" (scheduled at 2026-02-20 21:02:52.247678+05:30)
+2026-02-20 21:02:52,252 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 21:02:52,252 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 21:02:52,252 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 21:02:56,113 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 21:02:56,113 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 21:02:56,145 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 21:02:56,589 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 21:02:56,589 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 21:02:56,589 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 21:02:56,589 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 21:02:56,589 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 21:02:56,589 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 21:02:56,589 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:03:52 IST)" executed successfully
+2026-02-20 21:03:12,925 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-20 21:03:12,927 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-20 21:03:31,639 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-20 21:03:31,651 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-20 21:03:31,652 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-20 21:03:31,652 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-20 21:03:31,652 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-20 21:03:31,725 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-20 21:03:31,725 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-20 21:03:31,725 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-20 21:03:31,725 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-20 21:03:31,725 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-20 21:03:31,725 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-20 21:03:31,725 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-20 21:04:31,656 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:04:31 IST)" (scheduled at 2026-02-20 21:04:31.639809+05:30)
+2026-02-20 21:04:31,673 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 21:04:31,713 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 21:04:31,714 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 21:04:36,907 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 21:04:36,907 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 21:04:37,073 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 21:04:38,178 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 21:04:38,182 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 21:04:38,182 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 21:04:38,182 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 21:04:38,182 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 21:04:38,182 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 21:04:38,184 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:05:31 IST)" executed successfully
+2026-02-20 21:05:31,640 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:06:31 IST)" (scheduled at 2026-02-20 21:05:31.639809+05:30)
+2026-02-20 21:05:31,640 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 21:05:31,640 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 21:05:31,640 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 21:05:35,654 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 21:05:35,654 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 21:05:35,688 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 21:05:36,132 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 21:05:36,132 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 21:05:36,132 - infoStreamDigest - ERROR - Failed to send email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 21:05:36,132 - infoStreamDigest - ERROR - Failed to send entertainment email to adityasalian011@gmail.com: Gmail credentials not configured
+2026-02-20 21:05:36,132 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 21:05:36,134 - scheduler - INFO - Immediate digest job with result: {'status': 'error', 'message': 'Processed 1 user(s): sent 0 email(s), 1 failed', 'total_users': 1, 'emails_sent': 0, 'emails_failed': 1, 'errors': [{'news_topic': 'entertainment', 'error': 'Gmail credentials not configured'}]}
+2026-02-20 21:05:36,135 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:06:31 IST)" executed successfully
+2026-02-20 21:05:52,526 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-20 21:05:52,526 - scheduler - INFO - Scheduler stopped gracefully
+2026-02-20 21:10:34,480 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:10:34,480 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:10:34,480 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:10:34,485 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:10:34,485 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:10:34,485 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:10:34,485 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-02-20 21:10:34,487 - apscheduler.scheduler - INFO - Added job "11:00 AM Digest" to job store "default"
+2026-02-20 21:10:34,487 - apscheduler.scheduler - INFO - Added job "2:00 PM Digest" to job store "default"
+2026-02-20 21:10:34,487 - apscheduler.scheduler - INFO - Added job "5:00 PM Digest" to job store "default"
+2026-02-20 21:10:34,487 - apscheduler.scheduler - INFO - Added job "7:00 PM Digest" to job store "default"
+2026-02-20 21:10:34,487 - apscheduler.scheduler - INFO - Added job "9:00 PM Digest" to job store "default"
+2026-02-20 21:10:34,489 - apscheduler.scheduler - INFO - Added job "11:00 PM Digest" to job store "default"
+2026-02-20 21:10:34,490 - apscheduler.scheduler - INFO - Added job "Check Immediate Emails" to job store "default"
+2026-02-20 21:10:34,490 - apscheduler.scheduler - INFO - Scheduler started
+2026-02-20 21:10:34,532 - scheduler - INFO -   - Check Immediate Emails (ID: check_immediate)
+2026-02-20 21:10:34,532 - scheduler - INFO -   - 11:00 PM Digest (ID: digest_11pm)
+2026-02-20 21:10:34,533 - scheduler - INFO -   - 11:00 AM Digest (ID: digest_11am)
+2026-02-20 21:10:34,533 - scheduler - INFO -   - 2:00 PM Digest (ID: digest_2pm)
+2026-02-20 21:10:34,533 - scheduler - INFO -   - 5:00 PM Digest (ID: digest_5pm)
+2026-02-20 21:10:34,533 - scheduler - INFO -   - 7:00 PM Digest (ID: digest_7pm)
+2026-02-20 21:10:34,533 - scheduler - INFO -   - 9:00 PM Digest (ID: digest_9pm)
+2026-02-20 21:11:34,504 - apscheduler.executors.default - INFO - Running job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:11:34 IST)" (scheduled at 2026-02-20 21:11:34.485496+05:30)
+2026-02-20 21:11:34,518 - infoStreamDigest - INFO - Processing immediate emails for user: adityasalian011@gmail.com
+2026-02-20 21:11:34,518 - infoStreamDigest - INFO - Sending immediate email to adityasalian011@gmail.com for topic: entertainment
+2026-02-20 21:11:34,529 - infoStreamDigest - INFO - Fetching news for topic: entertainment
+2026-02-20 21:11:44,168 - news.utils - INFO - Fetched 10 articles for topic: entertainment
+2026-02-20 21:11:44,168 - infoStreamDigest - INFO - Fetching weather for city: Thane
+2026-02-20 21:11:44,205 - infoStreamDigest - INFO - Fetching stock data
+2026-02-20 21:11:45,692 - infoStreamDigest - INFO - HTML generated successfully
+2026-02-20 21:11:45,692 - infoStreamDigest - INFO - Sending email to adityasalian011@gmail.com
+2026-02-20 21:11:49,679 - infoStreamDigest - INFO - Successfully sent email to adityasalian011@gmail.com
+2026-02-20 21:11:49,679 - infoStreamDigest - INFO - Successfully sent entertainment email to adityasalian011@gmail.com
+2026-02-20 21:11:49,718 - infoStreamDigest - INFO - Reset isImmediate flag for 1 schedules
+2026-02-20 21:11:49,719 - infoStreamDigest - INFO - Immediate email batch complete: {'status': 'success', 'message': 'Processed 1 user(s): sent 1 email(s), 0 failed', 'total_users': 1, 'emails_sent': 1, 'emails_failed': 0, 'errors': []}
+2026-02-20 21:11:49,719 - scheduler - INFO - Immediate digest job with result: {'status': 'success', 'message': 'Processed 1 user(s): sent 1 email(s), 0 failed', 'total_users': 1, 'emails_sent': 1, 'emails_failed': 0, 'errors': []}
+2026-02-20 21:11:49,719 - apscheduler.executors.default - INFO - Job "Check Immediate Emails (trigger: interval[0:01:00], next run at: 2026-02-20 21:12:34 IST)" executed successfully
+2026-02-20 21:12:18,549 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-02-20 21:12:18,549 - scheduler - INFO - Scheduler stopped gracefully

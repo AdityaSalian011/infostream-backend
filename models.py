@@ -64,8 +64,8 @@ class UserSetting(Base):
 
     country = Column(String(50), nullable=False)
     city = Column(String(50), nullable=False)
-    newsApi = Column(String(255), nullable=True)
-    weatherApi = Column(String(255), nullable=True)
+    newsApi = Column(String(255), nullable=True, default=None)
+    weatherApi = Column(String(255), nullable=True, default=None)
 
     # Useful for debugging
     def __repr__(self):
@@ -96,8 +96,8 @@ class NewsTopicAndScheduleTime(Base):
     newsTopic = Column(String(50), nullable=False)
     isCustomTopic = Column(Boolean, nullable=False, default=False)
     deliveryTime = Column(String(50), nullable=False)
-    isImmediate = Column(Boolean, nullable=False)
-    isScheduled = Column(Boolean, nullable=False)
+    isImmediate = Column(Boolean, nullable=False, default=True)
+    isScheduled = Column(Boolean, nullable=False, default=False)
 
     # Useful for debugging
     def __repr__(self):

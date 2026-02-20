@@ -1,8 +1,8 @@
 import os
 from news.utils import get_top_10_news
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 
-load_dotenv()
+load_dotenv(find_dotenv())
 NEWS_API_KEY = os.getenv('NEWS_API_KEY')
 
 class NewsAPI:

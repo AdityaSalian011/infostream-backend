@@ -1,8 +1,8 @@
 from weather.utils import get_weather_api
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 
-load_dotenv()
+load_dotenv(find_dotenv())
 WEATHER_API_KEY = os.getenv('WEATHER_API_KEY')
 
 class WeatherAPI:
