@@ -11,15 +11,15 @@ class HTMLEmail:
         """A method to send html email at the given address"""
         try:
             from_email = os.getenv('FROM_EMAIL')
-            smtp_key = os.getenv('SMTP_KEY')
+            brevo_api_key = os.getenv('BREVO_API_KEY')
 
-            if not from_email or not smtp_key:
-                return None, 'Gmail credentials not configured'
+            if not from_email or not brevo_api_key:
+                return None, 'Brevo credentials not configured'
             
             response = requests.post(
                 'https://api.brevo.com/v3/smtp/email',
                 headers={
-                    'api-key': smtp_key,
+                    'api-key': brevo_api_key,
                     'Content-Type': 'application/json'
                 },
                 json={
