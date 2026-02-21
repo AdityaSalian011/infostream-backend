@@ -48,7 +48,7 @@ def start_scheduler():
     """
     # Schedule digest jobs at specific times
     scheduler.add_job(
-        lambda: run_digest_job('11:00'),
+        lambda: run_digest_job('11:00 AM'),
         CronTrigger(hour=11, minute=0),
         id='digest_11am',
         name='11:00 AM Digest',
@@ -56,7 +56,7 @@ def start_scheduler():
     )
 
     scheduler.add_job(
-        lambda: run_digest_job('14:00'),
+        lambda: run_digest_job('02:00 PM'),
         CronTrigger(hour=14, minute=0),
         id='digest_2pm',
         name='2:00 PM Digest',
@@ -64,7 +64,7 @@ def start_scheduler():
     )
 
     scheduler.add_job(
-        lambda: run_digest_job('17:00'),
+        lambda: run_digest_job('05:00 PM'),
         CronTrigger(hour=17, minute=0),
         id='digest_5pm',
         name='5:00 PM Digest',
@@ -72,7 +72,7 @@ def start_scheduler():
     )
 
     scheduler.add_job(
-        lambda: run_digest_job('19:00'),
+        lambda: run_digest_job('07:00 PM'),
         CronTrigger(hour=19, minute=0),
         id='digest_7pm',
         name='7:00 PM Digest',
@@ -80,7 +80,7 @@ def start_scheduler():
     )
 
     scheduler.add_job(
-        lambda: run_digest_job('21:00'),
+        lambda: run_digest_job('09:00 PM'),
         CronTrigger(hour=21, minute=0),
         id='digest_9pm',
         name='9:00 PM Digest',
@@ -88,7 +88,7 @@ def start_scheduler():
     )
 
     scheduler.add_job(
-        lambda: run_digest_job('23:00'),
+        lambda: run_digest_job('11:00 PM'),
         CronTrigger(hour=23, minute=0),
         id='digest_11pm',
         name='11:00 PM Digest',
