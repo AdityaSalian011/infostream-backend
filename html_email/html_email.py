@@ -19,7 +19,7 @@ class HTMLEmail:
             response = requests.post(
                 'https://api.brevo.com/v3/smtp/email',
                 headers={
-                    'api_key': smtp_key,
+                    'api-key': smtp_key,
                     'Content-Type': 'application/json'
                 },
                 json={
