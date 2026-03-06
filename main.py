@@ -379,7 +379,7 @@ async def forgot_password(
     if not user:
         raise HTTPException(
             status_code=404,
-            detail=f'User with email {request.email} not found. Try Logging in.'
+            detail=f'User with email {request.email} not found. Go to Signup page.'
         )
     
     ## Step2: Create shorter token
